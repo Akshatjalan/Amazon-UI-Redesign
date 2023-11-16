@@ -1,7 +1,49 @@
-.homeContainer {
+.heroContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f2f2f2;
-  height: 85vh;
+  height: 64vh;
+  margin: 40px;
+  border-radius: 16px;
+  gap: 80px;
+  background-color: #f2f3f5;
+}
+
+.heroContainerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.heroHeading {
+  font-size: 64px;
+  font-weight: 700;
+  width: 680px;
+}
+
+.heroDesc {
+  font-size: 20px;
+  font-weight: 500;
+  width: 520px;
+}
+
+.heroButton {
+  font-size: medium;
+  width: 240px;
+  padding: 16px;
+  background-color: #fff;
+  color: #131921;
+  border: none;
+  border: #131921 1px solid;
+  border-radius: 12px;
+  font-weight: 500;
+}
+
+.heroContainerRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 28px;
+  border-radius: 12px;
+  background-color: #fff;
 }
