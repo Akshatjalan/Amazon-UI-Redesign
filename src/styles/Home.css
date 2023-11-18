@@ -18,7 +18,9 @@
 .heroHeading {
   font-size: 64px;
   font-weight: 700;
-  width: 680px;
+  width: 640px;
+  letter-spacing: -1.5px;
+  line-height: 64px;
 }
 
 .heroDesc {
