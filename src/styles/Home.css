@@ -2,11 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 64vh;
+  height: 56vh;
   margin: 40px;
   border-radius: 16px;
-  gap: 80px;
+  gap: 60px;
   background-color: #f2f3f5;
+  padding: 0;
+  padding-left: 80px;
 }
 
 .heroContainerLeft {
@@ -18,7 +20,7 @@
 .heroHeading {
   font-size: 64px;
   font-weight: 700;
-  width: 640px;
+  width: 540px;
   letter-spacing: -1.5px;
   line-height: 64px;
 }
@@ -26,7 +28,7 @@
 .heroDesc {
   font-size: 20px;
   font-weight: 500;
-  width: 520px;
+  width: 500px;
 }
 
 .heroButton {
@@ -41,11 +43,59 @@
   font-weight: 500;
 }
 
-.heroContainerRight {
+/* .heroContainerRight {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 28px;
   border-radius: 12px;
   background-color: #fff;
+} */
+
+.swiperCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 40vh;
+}
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cardHeading {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.cardPrice {
+  font-size: x-large;
+}
+
+/* ACCOUNT CONTAINER */
+
+.accountContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 14vh;
+  margin: 40px;
+  border-radius: 16px;
+  gap: 60px;
+  background-color: #f8f3f0;
+}
+
+.accountItems {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.itemCard {
+  display: flex;
+  align-items: center;
+  width: 20%;
 }
