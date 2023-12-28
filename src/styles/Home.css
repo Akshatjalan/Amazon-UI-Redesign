@@ -79,8 +79,8 @@
 
 .accountContainer {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 14vh;
   margin: 40px;
   border-radius: 16px;
@@ -91,11 +91,16 @@
 .accountItems {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 100px;
 }
 
 .itemCard {
   display: flex;
   align-items: center;
-  width: 20%;
+  font-weight: 600;
+  gap: 10px;
+}
+
+.itemCard div > div:nth-child(2) {
+  font-weight: 500;
 }

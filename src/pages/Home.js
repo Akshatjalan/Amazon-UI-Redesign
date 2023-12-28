@@ -10,6 +10,7 @@ import "swiper/css/scrollbar";
 import userPng from "../assets/user.png";
 import orderPng from "../assets/order_package.svg";
 import mobilePng from "../assets/mobile.png";
+import kitchenPng from "../assets/kitchen.png";
 
 function Home() {
   return (
@@ -93,20 +94,32 @@ function Home() {
       <div className="accountContainer">
         <div className="accountItems">
           <div className="itemCard">
-            <img width="100px" src={userPng} alt="Amazon" />
-            <div> Hi, Akshat recommendations for you</div>
+            <img width="92px" src={userPng} alt="Amazon" />
+            <div>
+              <div> Hi, Akshat</div>
+              <div> recommendations for you</div>
+            </div>
           </div>
           <div className="itemCard">
-            <img width="100px" src={orderPng} alt="Amazon" />
-            <div>Your Orders</div>
+            <img width="96px" src={orderPng} alt="Amazon" />
+            <div>
+              <div>Your Orders</div>
+              <div>View your Orders</div>
+            </div>
           </div>
           <div className="itemCard">
             <img width="100px" src={mobilePng} alt="Amazon" />
-            <div>Mobiles, electronics and much more for you</div>
+            <div>
+              <div>Mobiles and electronics</div>
+              <div> Big sale upto 40% off</div>
+            </div>
           </div>
           <div className="itemCard">
-            <img width="100px" src={userPng} alt="Amazon" />
-            <div> Hi, Akshat recommendations for you</div>
+            <img width="68px" src={kitchenPng} alt="Amazon" />
+            <div>
+              <div> Home and Kitchen</div>
+              <div> Big sale 30% off</div>
+            </div>
           </div>
         </div>
       </div>
