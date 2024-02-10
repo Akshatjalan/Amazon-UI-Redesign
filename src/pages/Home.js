@@ -94,28 +94,28 @@ function Home() {
       <div className="accountContainer">
         <div className="accountItems">
           <div className="itemCard">
-            <img width="92px" src={userPng} alt="Amazon" />
+            <img width="92px" src={userPng} alt="profileDeals" />
             <div>
               <div> Hi, Akshat</div>
               <div> recommendations for you</div>
             </div>
           </div>
           <div className="itemCard">
-            <img width="96px" src={orderPng} alt="Amazon" />
+            <img width="96px" src={orderPng} alt="ordersDeals" />
             <div>
               <div>Your Orders</div>
               <div>View your Orders</div>
             </div>
           </div>
           <div className="itemCard">
-            <img width="100px" src={mobilePng} alt="Amazon" />
+            <img width="100px" src={mobilePng} alt="mobileDeals" />
             <div>
               <div>Mobiles and electronics</div>
               <div> Big sale upto 40% off</div>
             </div>
           </div>
           <div className="itemCard">
-            <img width="68px" src={kitchenPng} alt="Amazon" />
+            <img width="68px" src={kitchenPng} alt="homeDeals" />
             <div>
               <div> Home and Kitchen</div>
               <div> Big sale 30% off</div>
