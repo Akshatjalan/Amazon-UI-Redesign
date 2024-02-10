@@ -3,12 +3,13 @@
   justify-content: center;
   align-items: center;
   height: 56vh;
-  margin: 40px;
-  border-radius: 16px;
+  margin: 30px;
+  border-radius: 10px;
   gap: 60px;
   background-color: #f2f3f5;
   padding: 0;
   padding-left: 80px;
+  margin-bottom: 0;
 }
 
 .heroContainerLeft {
@@ -82,8 +83,10 @@
   align-items: center;
   justify-content: center;
   height: 14vh;
-  margin: 40px;
-  border-radius: 16px;
+  margin: 30px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  border-radius: 10px;
   gap: 60px;
   background-color: #f8f3f0;
 }
@@ -103,4 +106,44 @@
 
 .itemCard div > div:nth-child(2) {
   font-weight: 500;
+}
+
+/* CATEGORY CONTAINER */
+
+.categoryContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  margin-top: 0px;
+  gap: 60px;
+}
+
+.categoryHeaders {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  gap: 60px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.categoryItems {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.categoryitemCard {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  gap: 20px;
+  height: 24vh;
+  width: 50vh;
+  background-color: #f2f2f2;
+  border-radius: 10px;
 }
