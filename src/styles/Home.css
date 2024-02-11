@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 56vh;
+  height: 50vh;
   margin: 30px;
   border-radius: 10px;
   gap: 60px;
@@ -140,10 +140,116 @@
 .categoryitemCard {
   display: flex;
   align-items: center;
-  font-weight: 600;
-  gap: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  gap: 40px;
   height: 24vh;
   width: 50vh;
+  padding-left: 20px;
   background-color: #f2f2f2;
   border-radius: 10px;
+  overflow: hidden;
+}
+
+/* BANNERS SECTION */
+
+.bannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  margin: 30px;
+  border-radius: 10px;
+  gap: 60px;
+  background-color: #bbd7e2;
+  padding: 0;
+  padding-left: 80px;
+  margin-bottom: 0;
+}
+
+.bannerContainerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.bannerHeading {
+  font-size: 60px;
+  font-weight: 700;
+  width: 600px;
+  letter-spacing: -1.5px;
+  line-height: 64px;
+}
+
+.bannerDesc {
+  font-size: 20px;
+  font-weight: 500;
+  width: 500px;
+}
+
+.bannerImg img {
+  height: 480px;
+}
+
+/* PRODUCTS CONTAINER */
+
+.productsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+  margin-top: 0px;
+  margin-bottom: 0;
+}
+
+.productsHeaders {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  gap: 60px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.productsItems {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  overflow: hidden;
+}
+
+.productsitemCard {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  height: 40vh;
+  width: 28vh;
+  padding: 40px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.productsitemCard img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: c;
+}
+
+.productBrand {
+  color: #333333;
+}
+
+.productName {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.productPrice {
+  font-size: 24px;
+  font-weight: 600;
 }
