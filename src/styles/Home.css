@@ -200,6 +200,7 @@
   margin: 30px;
   margin-top: 0px;
   margin-bottom: 0;
+  gap: 50px;
 }
 
 .productsHeaders {
@@ -216,32 +217,23 @@
 .productsItems {
   display: flex;
   align-items: center;
-  gap: 28px;
   overflow: hidden;
 }
 
 .productsitemCard {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   gap: 10px;
   height: 40vh;
   width: 28vh;
-  padding: 40px;
-  background-color: #f2f2f2;
+  padding: 30px;
+  background-color: #f5f5f7;
   border-radius: 10px;
   overflow: hidden;
 }
 
-.productsitemCard img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: c;
-}
-
 .productBrand {
-  color: #333333;
+  color: #474747;
 }
 
 .productName {
@@ -252,4 +244,10 @@
 .productPrice {
   font-size: 24px;
   font-weight: 600;
+}
+
+.productImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

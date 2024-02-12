@@ -1,14 +1,14 @@
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #fff;
-  color: #131921;
+  background-color: #131921;
+  color: #fff;
   height: 64px;
   padding-left: 40px;
   padding-right: 40px;
   font-weight: 500;
   font-size: 18px;
-  border-bottom: #f2f3f5 2px solid;
+  border-bottom: #f2f3f5 0.5px solid;
 }
 
 .navbarLeft {
@@ -57,7 +57,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 28px;
   list-style: none;
 }
 

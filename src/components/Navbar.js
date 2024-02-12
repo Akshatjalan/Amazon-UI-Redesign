@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Navbar.css";
-import logo from "../assets/amazon_logo.png";
+import logo from "../assets/amazon-logo.svg ";
 import userPng from "../assets/user.png";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
