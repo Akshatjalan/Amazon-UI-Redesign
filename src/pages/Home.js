@@ -13,7 +13,7 @@ import mobilePng from "../assets/mobile.png";
 import kitchenPng from "../assets/kitchen.png";
 import dogPng from "../assets/dog.png";
 import laptopPng from "../assets/Laptop.png";
-import beautyPng from "../assets/beauty.png";
+import beautyPng from "../assets/sneakers.png";
 import toysPng from "../assets/toys.png";
 import kitchenAppliancePng from "../assets/kitchenAppliances.png";
 
@@ -130,7 +130,7 @@ function Home() {
             <img width="400px" src={laptopPng} alt="profileDeals" />
           </div>
           <div className="categoryitemCard">
-            <div>Beauty picks</div>
+            <div>Sneakers and shoes</div>
             <img width="300px" src={beautyPng} alt="profileDeals" />
           </div>
           <div className="categoryitemCard">
