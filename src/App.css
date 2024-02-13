@@ -1,3 +1,13 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loader img {
+}
