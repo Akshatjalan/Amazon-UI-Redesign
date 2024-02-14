@@ -19,8 +19,8 @@
 }
 
 .heroHeading {
-  font-size: 64px;
-  font-weight: 700;
+  font-family: emberHelabold;
+  font-size: 60px;
   width: 540px;
   letter-spacing: -1.5px;
   line-height: 64px;
@@ -33,7 +33,7 @@
 }
 
 .heroButton {
-  font-size: medium;
+  font-family: emberRegular;
   width: 240px;
   padding: 16px;
   background-color: #fff;
@@ -41,17 +41,14 @@
   border: none;
   border: #131921 1px solid;
   border-radius: 12px;
-  font-weight: 500;
+  font-size: 18px;
 }
 
-/* .heroContainerRight {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 28px;
-  border-radius: 12px;
-  background-color: #fff;
-} */
+.heroButton:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+  border: #ff9900 1px solid;
+}
 
 .swiperCard {
   display: flex;
@@ -125,7 +122,6 @@
   margin: 30px;
   margin-top: 24px;
   margin-bottom: 12px;
-  gap: 60px;
   font-size: 20px;
   font-weight: 500;
 }
@@ -174,8 +170,8 @@
 }
 
 .bannerHeading {
+  font-family: emberHelabold;
   font-size: 60px;
-  font-weight: 700;
   width: 600px;
   letter-spacing: -1.5px;
   line-height: 64px;
@@ -209,14 +205,13 @@
   margin: 30px;
   margin-top: 24px;
   margin-bottom: 12px;
-  gap: 60px;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
 }
 
 .productsItems {
   display: flex;
   align-items: center;
+  gap: 50px;
   overflow: hidden;
 }
 

@@ -27,7 +27,7 @@ function Home() {
             Shop laptops, desktops, monitors, tablets, PC gaming, hard drives
             and storage, Accessories and more
           </div>
-          <button className="heroButton">Explore all Products</button>
+          <button className="heroButton">Explore all Products →</button>
         </div>
 
         <Swiper
@@ -170,8 +170,7 @@ function Home() {
             <div className="productName">Nike air man light red series</div>
             <div className="productPrice">$90.00</div>
           </div>
-        </div>
-        <div className="productsItems">
+
           <div className="productsitemCard">
             <div className="productImg">
               <img height="250px" src={toysPng} alt="profileDeals" />
@@ -180,8 +179,7 @@ function Home() {
             <div className="productName">Nike air man light red series</div>
             <div className="productPrice">$90.00</div>
           </div>
-        </div>
-        <div className="productsItems">
+
           <div className="productsitemCard">
             <div className="productImg">
               <img height="250px" src={toysPng} alt="profileDeals" />
@@ -190,8 +188,7 @@ function Home() {
             <div className="productName">Nike air man light red series</div>
             <div className="productPrice">$90.00</div>
           </div>
-        </div>
-        <div className="productsItems">
+
           <div className="productsitemCard">
             <div className="productImg">
               <img height="250px" src={toysPng} alt="profileDeals" />
@@ -200,8 +197,7 @@ function Home() {
             <div className="productName">Nike air man light red series</div>
             <div className="productPrice">$90.00</div>
           </div>
-        </div>
-        <div className="productsItems">
+
           <div className="productsitemCard">
             <div className="productImg">
               <img height="250px" src={toysPng} alt="profileDeals" />

@@ -1,5 +1,21 @@
 body {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat" */
+  font-family: emberRegular, sans-serif;
+}
+
+@font-face {
+  font-family: emberRegular;
+  src: url(./Fonts/AmazonEmber_Rg.ttf);
+}
+
+@font-face {
+  font-family: emberHelabold;
+  src: url(./Fonts/AmazonEmber_He.ttf);
+}
+
+@font-face {
+  font-family: emberbold;
+  src: url(./Fonts/AmazonEmber_Bd.ttf);
 }
 
 .loader {
