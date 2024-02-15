@@ -29,7 +29,7 @@ function Home() {
           </div>
           <button className="heroButton">
             <div>Explore all Products</div>
-            <span>➔</span>
+            <span>➜</span>
           </button>
         </div>
 
