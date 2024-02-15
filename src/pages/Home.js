@@ -27,7 +27,10 @@ function Home() {
             Shop laptops, desktops, monitors, tablets, PC gaming, hard drives
             and storage, Accessories and more
           </div>
-          <button className="heroButton">Explore all Products →</button>
+          <button className="heroButton">
+            <div>Explore all Products</div>
+            <span>➔</span>
+          </button>
         </div>
 
         <Swiper
