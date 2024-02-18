@@ -41,13 +41,13 @@ function Navbar() {
         <div className="navbarRight">
           <ul className="navbarTopLinks">
             <li>
-              <FaRegHeart />
+              <FaRegHeart title="Wishlist" />
             </li>
             <li>
-              <BsBagCheck />
+              <BsBagCheck title="Orders" />
             </li>
             <li>
-              <FiShoppingCart />
+              <FiShoppingCart title="Cart" />
             </li>
             <li>
               <img width="50px" src={userPng} alt="Amazon" />
