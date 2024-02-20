@@ -216,6 +216,54 @@ function Home() {
         <div>Amazon Top Sellers</div>
         <div>See more →</div>
       </div>
+      <div className="productsContainer">
+        <div className="productsItems">
+          <div className="productsitemCard">
+            <div className="productImg">
+              <img height="250px" src={toysPng} alt="profileDeals" />
+            </div>
+            <div className="productBrand">Nike</div>
+            <div className="productName">Nike air man light red series</div>
+            <div className="productPrice">$90.00</div>
+          </div>
+
+          <div className="productsitemCard">
+            <div className="productImg">
+              <img height="250px" src={toysPng} alt="profileDeals" />
+            </div>
+            <div className="productBrand">Nike</div>
+            <div className="productName">Nike air man light red series</div>
+            <div className="productPrice">$90.00</div>
+          </div>
+
+          <div className="productsitemCard">
+            <div className="productImg">
+              <img height="250px" src={toysPng} alt="profileDeals" />
+            </div>
+            <div className="productBrand">Nike</div>
+            <div className="productName">Nike air man light red series</div>
+            <div className="productPrice">$90.00</div>
+          </div>
+
+          <div className="productsitemCard">
+            <div className="productImg">
+              <img height="250px" src={toysPng} alt="profileDeals" />
+            </div>
+            <div className="productBrand">Nike</div>
+            <div className="productName">Nike air man light red series</div>
+            <div className="productPrice">$90.00</div>
+          </div>
+
+          <div className="productsitemCard">
+            <div className="productImg">
+              <img height="250px" src={toysPng} alt="profileDeals" />
+            </div>
+            <div className="productBrand">Nike</div>
+            <div className="productName">Nike air man light red series</div>
+            <div className="productPrice">$90.00</div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
