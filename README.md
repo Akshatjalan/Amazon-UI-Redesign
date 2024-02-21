@@ -1,31 +1,21 @@
-<h1 align="center">Amazon Redesign</h1>
+<h1 align="center">Amazon UI Redesign</h1>
 
-<p align="center">This website is an opportunity to demonstrate a clean and minimum <b>Portfolio</b> layout of information about me and to provide further information (via links) about my work.<p>
+<p align="center">🚀 Excited to share my latest project — a fresh UI redesign for Amazon.in! 👨‍💻✨
 
-  ### <code>Live Demo</code> - **[Portfolio Website](https://akshatjalan.github.io/devfolio/)**
+🌟 As a passionate developer, I took the initiative to revamp Amazon's interface to enhance user experience. The landing page redesign is live and built using ReactJS, Javascript, HTML, and CSS. 💡
 
-# Website Preview
+🎯 Stay tuned as I continue to expand this project by developing a complete website redesign with backend integration. 🛠️.<p>
+
+### <code>Live Demo</code> - **[Portfolio Website](https://akshatjalan.github.io/devfolio/)**
+
+# Redesign Preview
 
  ![Alt text](https://github.com/Akshatjalan/Amazon-UI-Redesign/blob/main/src/assets/redesignMock.png?raw=true "Main Page")
-  This is a portfolio of my work, including both my personal and academic projects.
 
 :star:  Star me on GitHub — it helps!
 
 # Features
- Fully Responsive\
- Valid `HTML`, `CSS`, `JavaScript` with `GSAP scrolltrigger animations`
- 
-# Sections 📚
-- [x] About me
-- [x] Skills
-- [x] Experience
-- [x] Resume 
-- [x] Projects 
-- [x] Contact
-
-# Tools Used
-* [<b>GitHub Pages</b>](https://create-react-app.dev/docs/deployment/#github-pages) - To host my static website (HTML, CSS, JS).
-
+Build using `ReactJS`, `Javascript`, `HTML`, `CSS`
 
 ## Contact 
  <h3 align="center">
