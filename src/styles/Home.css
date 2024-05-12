@@ -146,7 +146,9 @@
   font-weight: 500;
   gap: 40px;
   height: 24vh;
-  width: 50vh;
+  /* width: 50vh; */
+  width: 100%;
+  justify-content: space-around;
   padding-left: 20px;
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -198,11 +200,9 @@
 .productsContainer {
   display: flex;
   align-items: center;
-  justify-content: center;
   margin: 30px;
   margin-top: 0px;
   margin-bottom: 0;
-  gap: 50px;
 }
 
 .productsHeaders {
@@ -217,8 +217,10 @@
 .productsItems {
   display: flex;
   align-items: center;
-  gap: 50px;
-  overflow: hidden;
+  width: 100%;
+  justify-content: space-between;
+  /* gap: 50px; */
+  overflow: scroll;
 }
 
 .productsitemCard {
@@ -226,10 +228,9 @@
   flex-direction: column;
   gap: 10px;
   height: 40vh;
-  width: 28vh;
+  min-width: 28vh;
   padding: 30px;
-  background-color: #f5f5f7;
-  border-radius: 10px;
+  border-radius: 4px;
   overflow: hidden;
 }
 
@@ -251,28 +252,214 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f7f7f7;
 }
-
 
 /* Medium size screen */
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1750px) {
+  /* Hero Section */
+
+  .heroContainer {
+    height: 50vh;
+    margin: 30px;
+    border-radius: 10px;
+    gap: 0px;
+  }
+
+  .heroHeading {
+    font-size: 52px;
+  }
+
+  .swiperCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 40vh;
+  }
+
+  .cardDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .cardHeading {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  .cardPrice {
+    font-size: large;
+  }
+
+  .heroImg {
+    height: 320px;
+  }
+
   /* BANNERS SECTION */
 
-.bannerContainer {
-  gap: 40px;
+  .bannerContainer {
+    gap: 40px;
+  }
+
+  .bannerHeading {
+    font-family: emberbold;
+    font-size: 52px;
+  }
+
+  .bannerImg img {
+    height: 460px;
+  }
+
+  /* PRODUCTS SECTION */
+
+  .productsItems {
+    /* gap: 40px; */
+    overflow: scroll;
+  }
+
+  .productsitemCard {
+    padding-top: 0px;
+    height: 45vh;
+  }
 }
 
-.bannerHeading {
-  font-family: emberHelabold;
-  font-size: 52px;
-  width: 600px;
-  letter-spacing: -1.5px;
-  line-height: 64px;
+@media only screen and (max-width: 1480px) {
+  .bannerContainer {
+    overflow: hidden;
+  }
+
+  .swiperCard {
+    flex-direction: column-reverse;
+    height: 46vh;
+  }
+
+  .heroImg {
+    height: 240px;
+  }
+
+  .productPrice {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 
-.bannerImg img {
-  height: 380px;
-}
+@media only screen and (max-width: 1250px) {
+  .heroContainer {
+    overflow: auto;
+  }
 
+  .heroHeading {
+    font-size: 32px;
+    width: 340px;
+    letter-spacing: -1.5px;
+    line-height: 40px;
+  }
+
+  .heroDesc {
+    font-size: 18px;
+    font-weight: 500;
+    width: 320px;
+  }
+
+  .swiperCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 32vh;
+  }
+
+  .cardDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .cardHeading {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  .cardPrice {
+    font-size: large;
+  }
+
+  .heroImg {
+    height: 200px;
+  }
+
+  /* BANNER SECTION */
+
+  .bannerContainer {
+    gap: 0px;
+    flex-direction: column;
+    height: auto;
+    padding: 32px;
+  }
+
+  .bannerContainerLeft {
+    gap: 20px;
+  }
+
+  .bannerHeading {
+    font-size: 32px;
+    width: 300px;
+    letter-spacing: -1.5px;
+    line-height: 40px;
+  }
+
+  .bannerDesc {
+    font-size: 20px;
+    font-weight: 500;
+    width: 300px;
+  }
+
+  .bannerImg img {
+    height: 280px;
+  }
+
+  /* ACCOUNT SECTION */
+
+  .accountContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 14vh;
+    margin: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    gap: 60px;
+    background-color: #f8f3f0;
+    overflow: auto;
+  }
+
+  .accountItems {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .itemCard {
+    font-weight: 600;
+    font-size: 12px;
+    gap: 0px;
+  }
+
+  .itemCard div > div:nth-child(2) {
+    font-weight: 500;
+  }
+
+  /* CATEGORY CONTAINER */
+
+  .categoryItems {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }

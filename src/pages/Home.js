@@ -16,6 +16,20 @@ import laptopPng from "../assets/Laptop.png";
 import beautyPng from "../assets/sneakers.png";
 import toysPng from "../assets/toys.png";
 import kitchenAppliancePng from "../assets/kitchenAppliances.png";
+import shoes1Png from "../assets/Shoes 1.png";
+import shoes2Png from "../assets/Shoes 2.png";
+import shoes3Png from "../assets/Shoes 3.png";
+import shoes4Png from "../assets/Shoes 4.png";
+import shoes5Png from "../assets/Shoes 5.png";
+import shoes6Png from "../assets/Shoes 6.PNG";
+import shoes7Png from "../assets/Shoes 7.png";
+import tshirt1Png from "../assets/t-shirt1.png";
+import tshirt2Png from "../assets/t-shirt2.png";
+import tshirt3Png from "../assets/t-shirt3.png";
+import tshirt4Png from "../assets/t-shirt4.png";
+import shorts1Png from "../assets/shorts1.png";
+import trousers1Png from "../assets/trousers1.png";
+
 
 function Home() {
   return (
@@ -44,7 +58,7 @@ function Home() {
               <div className="cardDetails">
                 <div className="cardCompany">Apple</div>
                 <div className="cardHeading">Watch Ultra 2 Smartwatch</div>
-                <div className="cardPrice">₹ 89,900</div>
+                <div className="cardPrice">₹ 89,900.00</div>
               </div>
               <img
                 className="heroImg"
@@ -58,13 +72,13 @@ function Home() {
           <SwiperSlide>
             <div className="swiperCard">
               <div className="cardDetails">
-                <div className="cardCompany">Apple</div>
-                <div className="cardHeading">iPhone 15 Pro 128 GB</div>
-                <div className="cardPrice">₹ 1,30,990</div>
+                <div className="cardCompany">Nike</div>
+                <div className="cardHeading">Nike Men's Air Max pulse</div>
+                <div className="cardPrice">₹ 12,499.00</div>
               </div>
               <img
                 className="heroImg"
-                src={iphonePng}
+                src={shoes6Png}
                 height="
             440px"
                 alt="headphone"
@@ -76,7 +90,7 @@ function Home() {
               <div className="cardDetails">
                 <div className="cardCompany">Apple</div>
                 <div className="cardHeading">iPhone 15 Pro 128 GB</div>
-                <div className="cardPrice">$999</div>
+                <div className="cardPrice">₹ 1,30,990.00</div>
               </div>
               <img
                 className="heroImg"
@@ -165,49 +179,60 @@ function Home() {
       </div>
       <div className="productsContainer">
         <div className="productsItems">
+          
+
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={toysPng} alt="profileDeals" />
+              <img height="250px" src={shoes7Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
-            <div className="productName">Nike air man light red series</div>
-            <div className="productPrice">$90.00</div>
+            <div className="productName">Nike Dunk High Retro series</div>
+            <div className="productPrice">₹ 9,495.00</div>
           </div>
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={toysPng} alt="profileDeals" />
+              <img height="250px" src={shoes5Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
-            <div className="productName">Nike air man light red series</div>
-            <div className="productPrice">$90.00</div>
+            <div className="productName">Nike Victory 2 Proto Athletics Spikes</div>
+            <div className="productPrice">₹ 16,995.00</div>
           </div>
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={toysPng} alt="profileDeals" />
+              <img height="250px" src={shoes3Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
-            <div className="productName">Nike air man light red series</div>
-            <div className="productPrice">$90.00</div>
+            <div className="productName">Nike Phantom GX 2 Elite SE</div>
+            <div className="productPrice">₹ 23,795.00</div>
           </div>
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={toysPng} alt="profileDeals" />
+              <img height="250px" src={shoes4Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
-            <div className="productName">Nike air man light red series</div>
-            <div className="productPrice">$90.00</div>
+            <div className="productName">Nike Air Max Plus Man series</div>
+            <div className="productPrice">₹ 15,995.00</div>
           </div>
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={toysPng} alt="profileDeals" />
+              <img height="250px" src={shoes2Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
-            <div className="productName">Nike air man light red series</div>
-            <div className="productPrice">$90.00</div>
+            <div className="productName">Nike SB Zoom Janoski OG+ series</div>
+            <div className="productPrice">₹ 8,595.00</div>
+          </div>
+
+          <div className="productsitemCard">
+            <div className="productImg">
+              <img height="250px" src={shoes1Png} alt="profileDeals" />
+            </div>
+            <div className="productBrand">Nike</div>
+            <div className="productName">Nike G.T cut 3 Episode series</div>
+            <div className="productPrice">₹ 17,495.00</div>
           </div>
         </div>
       </div>
@@ -220,47 +245,56 @@ function Home() {
         <div className="productsItems">
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={toysPng} alt="profileDeals" />
+              <img height="250px" src={tshirt1Png} alt="profileDeals" />
             </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">Nike air man light red series</div>
-            <div className="productPrice">$90.00</div>
+            <div className="productBrand">Men's T-shirt</div>
+            <div className="productName">Hawai Sportswear Men's T-shirt</div>
+            <div className="productPrice">₹ 1,195.00</div>
           </div>
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={toysPng} alt="profileDeals" />
+              <img height="250px" src={tshirt2Png} alt="profileDeals" />
             </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">Nike air man light red series</div>
-            <div className="productPrice">$90.00</div>
+            <div className="productBrand">Men's Long-Sleeve T-Shirt</div>
+            <div className="productName">Nike Sportswear Premium Essentials</div>
+            <div className="productPrice">₹ 2,695.00</div>
           </div>
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={toysPng} alt="profileDeals" />
+              <img height="250px" src={shorts1Png} alt="profileDeals" />
             </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">Nike air man light red series</div>
-            <div className="productPrice">$90.00</div>
+            <div className="productBrand">Men's shorts</div>
+            <div className="productName">Running division Men's shorts</div>
+            <div className="productPrice">₹ 1,495.00</div>
           </div>
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={toysPng} alt="profileDeals" />
+              <img height="250px" src={tshirt3Png} alt="profileDeals" />
             </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">Nike air man light red series</div>
-            <div className="productPrice">$90.00</div>
+            <div className="productBrand">Girl's Crop Top</div>
+            <div className="productName">Hydrangeas/White Girls Crop Top</div>
+            <div className="productPrice">₹ 1,995.00</div>
           </div>
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={toysPng} alt="profileDeals" />
+              <img height="250px" src={trousers1Png} alt="profileDeals" />
             </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">Nike air man light red series</div>
-            <div className="productPrice">$90.00</div>
+            <div className="productBrand">Men's Carpenter Trousers</div>
+            <div className="productName">Khaki/Khaki Colour Carpenter Trousers</div>
+            <div className="productPrice">₹ 5,995.00</div>
+          </div>
+
+          <div className="productsitemCard">
+            <div className="productImg">
+              <img height="250px" src={tshirt4Png} alt="profileDeals" />
+            </div>
+            <div className="productBrand">Men's Neck Top Sweatshirt</div>
+            <div className="productName">Men's Dri-FIT Fleece Fitness Crew-Neck Top</div>
+            <div className="productPrice">₹ 2,495.00</div>
           </div>
         </div>
       </div>

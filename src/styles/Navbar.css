@@ -103,3 +103,14 @@ li {
   color: #ff9900;
   font-weight: 500;
 }
+
+@media only screen and (max-width: 1250px) {
+  .navbar {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .navbarBottom {
+    overflow: scroll;
+    overflow-y: hidden;
+  }
+}
