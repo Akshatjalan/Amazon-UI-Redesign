@@ -6,7 +6,7 @@
 
 🎯 Stay tuned as I continue to expand this project by developing a complete website redesign with backend integration. 🛠️.<p>
 
-### <code>Live Demo</code> - **[Portfolio Website](https://akshatjalan.github.io/devfolio/)**
+### <code>Live Demo</code> - **[Amazon Redesign](https://akshat-amazonredesign.netlify.app/)**
 
 # Redesign Preview
 

@@ -183,7 +183,7 @@ function Home() {
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={shoes7Png} alt="profileDeals" />
+              <img src={shoes7Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
             <div className="productName">Nike Dunk High Retro series</div>
@@ -192,7 +192,7 @@ function Home() {
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={shoes5Png} alt="profileDeals" />
+              <img src={shoes5Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
             <div className="productName">Nike Victory 2 Proto Athletics Spikes</div>
@@ -201,7 +201,7 @@ function Home() {
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={shoes3Png} alt="profileDeals" />
+              <img src={shoes3Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
             <div className="productName">Nike Phantom GX 2 Elite SE</div>
@@ -210,7 +210,7 @@ function Home() {
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={shoes4Png} alt="profileDeals" />
+              <img src={shoes4Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
             <div className="productName">Nike Air Max Plus Man series</div>
@@ -219,7 +219,7 @@ function Home() {
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={shoes2Png} alt="profileDeals" />
+              <img src={shoes2Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
             <div className="productName">Nike SB Zoom Janoski OG+ series</div>
@@ -228,7 +228,7 @@ function Home() {
 
           <div className="productsitemCard">
             <div className="productImg">
-              <img height="250px" src={shoes1Png} alt="profileDeals" />
+              <img src={shoes1Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
             <div className="productName">Nike G.T cut 3 Episode series</div>
@@ -236,7 +236,7 @@ function Home() {
           </div>
         </div>
       </div>
-
+    
       <div className="productsHeaders">
         <div>Amazon Top Sellers</div>
         <div>See more →</div>
