@@ -252,3 +252,27 @@
   justify-content: center;
   align-items: center;
 }
+
+
+/* Medium size screen */
+
+@media only screen and (max-width: 1500px) {
+  /* BANNERS SECTION */
+
+.bannerContainer {
+  gap: 40px;
+}
+
+.bannerHeading {
+  font-family: emberHelabold;
+  font-size: 52px;
+  width: 600px;
+  letter-spacing: -1.5px;
+  line-height: 64px;
+}
+
+.bannerImg img {
+  height: 380px;
+}
+
+}
