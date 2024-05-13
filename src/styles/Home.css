@@ -314,7 +314,7 @@ div::-webkit-scrollbar {
   }
 
   .bannerHeading {
-    font-family: emberbold;
+    font-family: emberHelabold;
     font-size: 52px;
   }
 
@@ -417,10 +417,11 @@ div::-webkit-scrollbar {
   }
 
   .bannerContainerLeft {
-    gap: 20px;
+    gap: 28px;
   }
 
   .bannerHeading {
+    text-align: center;
     font-size: 32px;
     width: 300px;
     letter-spacing: -1.5px;
@@ -434,7 +435,7 @@ div::-webkit-scrollbar {
   }
 
   .bannerImg img {
-    height: 280px;
+    height: 380px;
   }
 
   /* ACCOUNT SECTION */
@@ -496,5 +497,28 @@ div::-webkit-scrollbar {
 @media only screen and (max-width: 900px) {
   .productImg > img {
     height: 180px; 
+  }
+
+  .accountContainer{
+    height: 14vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .accountItems {
+    gap: 16px;
+    width: 100%;
+  }
+  
+  .itemCard {
+    font-weight: 600;
+    font-size: 12px;
+    gap: 2px;
+    padding-right: 10px;
+    min-width: 240px;
+  }
+
+  .bannerImg img {
+    height: 280px;
   }
 }
