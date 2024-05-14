@@ -1,5 +1,19 @@
-div::-webkit-scrollbar {
-  display: none;
+::-webkit-scrollbar {
+  height: 3px;
+  width: 8px;
+}
+
+/* ::-webkit-scrollbar-track{
+  background-color: #c0c0c0a3;
+} */
+
+::-webkit-scrollbar-thumb{
+  background: #c0c0c0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: #aaaaaa;
 }
 
 .heroContainer {
@@ -224,7 +238,8 @@ div::-webkit-scrollbar {
   width: 100%;
   justify-content: space-between;
   /* gap: 50px; */
-  overflow: scroll;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .productsitemCard {
@@ -326,8 +341,9 @@ div::-webkit-scrollbar {
 
   .productsItems {
     /* gap: 40px; */
-    overflow: scroll;
-  }
+    overflow-x: scroll;
+    overflow-y: hidden;
+    }
 
   .productsitemCard {
     padding-top: 0px;
@@ -360,6 +376,10 @@ div::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 1250px) {
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 
   .heroContainer {
     overflow: auto;
@@ -413,7 +433,7 @@ div::-webkit-scrollbar {
     gap: 0px;
     flex-direction: column;
     height: auto;
-    padding: 32px;
+    padding: 28px;
   }
 
   .bannerContainerLeft {
@@ -480,7 +500,7 @@ div::-webkit-scrollbar {
   /* PRODUCT SECTION */
 
   .productImg > img {
-    height: 200px; 
+    height: 220px; 
   }
 
   .productName {
@@ -492,12 +512,13 @@ div::-webkit-scrollbar {
     font-size: 16px;
     font-weight: 500;
   }
+
+  .productsItems {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 900px) {
-  .productImg > img {
-    height: 180px; 
-  }
 
   .accountContainer{
     height: 14vh;
@@ -520,5 +541,9 @@ div::-webkit-scrollbar {
 
   .bannerImg img {
     height: 280px;
+  }
+
+  .bannerDesc {
+    font-size: 18px;
   }
 }
