@@ -162,7 +162,7 @@
   align-items: center;
   font-size: 20px;
   font-weight: 500;
-  gap: 40px;
+  gap: 18px;
   height: 24vh;
   /* width: 50vh; */
   width: 100%;
@@ -545,5 +545,13 @@
 
   .bannerDesc {
     font-size: 18px;
+  }
+
+  .categoryitemCard{
+    gap: 12px;
+  }
+
+  .categoryitemCard>img {
+    width: 240px;
   }
 }
