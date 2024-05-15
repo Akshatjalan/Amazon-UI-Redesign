@@ -56,6 +56,46 @@ function Navbar() {
           </ul>
         </div>
       </div>
+
+      <div className="navbarSmallScreen">
+        <div className="navbarLeftSmallScreen">
+          <img className="navbarLogoSmallScreen" src={logo} alt="Amazon" />
+        </div>
+        {/* <div className="navbarSearchBar">
+          <input
+            className="navbarSearch"
+            name="Search"
+            type="text"
+            placeholder="Search Amazon Products"
+          />
+          <BsSearch
+            style={{
+              backgroundColor: "#f2f3f5",
+              padding: 11,
+              borderTopRightRadius: 8,
+              borderBottomRightRadius: 8,
+            }}
+            color="#131921"
+            size="20"
+          />
+        </div> */}
+
+        <div className="navbarRight">
+          <ul className="navbarTopLinksSmallScreen">
+            <li>
+              <FaRegHeart title="Wishlist" />
+            </li>
+            <li>
+              <FiShoppingCart title="Cart" />
+            </li>
+            <li>
+              <img width="50px" src={userPng} alt="Amazon" />
+              <h5>Akshat</h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div className="navbarBottom">
         <div>
           <ul className="navbarBottomLinks">

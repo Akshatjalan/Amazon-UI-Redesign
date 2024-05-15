@@ -161,18 +161,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="bannerContainer">
-        <div className="bannerContainerLeft">
-          <div className="bannerHeading">AMAZON DELIVERS TO YOU</div>
-          <div className="bannerDesc">
-            Worldwide shipping. We ship to over 100 countries and regions, right
-            to your doorstep.
-          </div>
-        </div>
-        <div className="bannerImg">
-          <img src={dogPng} alt="headphone" />
-        </div>
-      </div>
+
 
       <div className="productsHeaders">
         <div>Pick up where you left off</div>
@@ -234,6 +223,19 @@ function Home() {
             <div className="productName">Nike G.T cut 3 Episode series</div>
             <div className="productPrice">₹ 17,495.00</div>
           </div>
+        </div>
+      </div>
+
+      <div className="bannerContainer">
+        <div className="bannerContainerLeft">
+          <div className="bannerHeading">AMAZON DELIVERS TO YOU</div>
+          <div className="bannerDesc">
+            Worldwide shipping. We ship to over 100 countries and regions, right
+            to your doorstep.
+          </div>
+        </div>
+        <div className="bannerImg">
+          <img src={dogPng} alt="headphone" />
         </div>
       </div>
     
