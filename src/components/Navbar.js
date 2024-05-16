@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Navbar.css";
 import logo from "../assets/amazon-logo.svg";
-import userPng from "../assets/user.png";
+import userPng from "../assets/userAvatar.png";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
@@ -28,12 +28,12 @@ function Navbar() {
             />
             <BsSearch
               style={{
-                backgroundColor: "#f2f3f5",
-                padding: 11,
+                backgroundColor: "#ff9900",
+                padding: 10.5,
                 borderTopRightRadius: 8,
                 borderBottomRightRadius: 8,
               }}
-              color="#131921"
+              color="#FFFF"
               size="20"
             />
           </div>
@@ -50,8 +50,8 @@ function Navbar() {
               <FiShoppingCart title="Cart" />
             </li>
             <li>
-              <img width="50px" src={userPng} alt="Amazon" />
-              Akshat
+              <img width="32px" src={userPng} alt="Amazon" />
+              <h4>&nbsp; Akshat</h4>
             </li>
           </ul>
         </div>
@@ -59,41 +59,41 @@ function Navbar() {
 
       <div className="navbarSmallScreen">
         <div className="navbarLeftSmallScreen">
-          <img className="navbarLogoSmallScreen" src={logo} alt="Amazon" />
+          <img width="30px" src={userPng} alt="Amazon" />
         </div>
-        {/* <div className="navbarSearchBar">
-          <input
-            className="navbarSearch"
-            name="Search"
-            type="text"
-            placeholder="Search Amazon Products"
-          />
-          <BsSearch
-            style={{
-              backgroundColor: "#f2f3f5",
-              padding: 11,
-              borderTopRightRadius: 8,
-              borderBottomRightRadius: 8,
-            }}
-            color="#131921"
-            size="20"
-          />
-        </div> */}
-
+        <div className="navbarLogoSmallScreen">
+          <img src={logo} alt="Amazon" />
+        </div>
         <div className="navbarRight">
           <ul className="navbarTopLinksSmallScreen">
             <li>
-              <FaRegHeart title="Wishlist" />
+              <FaRegHeart title="Wishlist" size={20} />
             </li>
             <li>
-              <FiShoppingCart title="Cart" />
-            </li>
-            <li>
-              <img width="50px" src={userPng} alt="Amazon" />
-              <h5>Akshat</h5>
+              <FiShoppingCart title="Cart" size={20} />
             </li>
           </ul>
         </div>
+      </div>
+
+      <div className="navbarSearchBarSmallScreen">
+        <input
+          className="navbarSearchSmallScreen"
+          name="Search"
+          type="text"
+          placeholder="Search Amazon Products"
+        />
+        <BsSearch
+              style={{
+                backgroundColor: "#ff9900",
+                padding: 10.5,
+                borderTopRightRadius: 8,
+                borderBottomRightRadius: 8,
+                marginRight: 10
+              }}
+              color="#FFFF"
+              size="20"
+            />
       </div>
 
       <div className="navbarBottom">

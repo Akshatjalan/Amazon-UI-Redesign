@@ -18,6 +18,10 @@
   display: none;
 }
 
+.navbarSearchBarSmallScreen{
+  display: none;
+}
+
 .navbarLeft {
   display: flex;
   align-items: center;
@@ -59,6 +63,7 @@
 
 .navbarLogo {
   width: 100px;
+  padding-top: 8px;
 }
 
 .navbarTopLinks {
@@ -131,22 +136,22 @@ li {
   .navbarSmallScreen {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: #131921;
+    justify-content: space-between;
+    background-color: #232f3e;
     color: #fff;
-    height: 52px;
-    padding-left: 20px;
-    padding-right: 10px;
+    height: 60px;
     font-weight: 500;
     font-size: 16px;
-    border-bottom: #6e6e6e 0.5px solid;
+    /* border-bottom: #6e6e6e 0.5px solid; */
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .navbarTopLinksSmallScreen {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 18px;
     list-style: none;
   }
 
@@ -162,6 +167,37 @@ li {
   }
 
   .navbarLogoSmallScreen {
-    width: 74px;
+    padding-top: 10px;
+    width: 94%;
+    position: absolute;
+    text-align: center;
   }
+
+  .navbarLogoSmallScreen img {
+    width: 84px;
+  }
+
+  .navbarSearchBarSmallScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: #232f3e;
+  }
+  
+  .navbarSearchSmallScreen {
+    font-family: emberRegular;
+    flex-grow: 1;
+    margin: 10px;
+    margin-right: 0;
+    background-color: #ffffff;
+    border: none;
+    padding: 12px;
+    padding-left: 20px;
+    font-size: 14px;
+    border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
 }
