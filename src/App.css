@@ -25,5 +25,10 @@ body {
   height: 100vh;
 }
 
-.loader img {
+@media only screen and (max-width: 900px) {
+  .loader img {
+    display: flex;
+    justify-content:center;
+    height: 32svh;
+  }
 }
