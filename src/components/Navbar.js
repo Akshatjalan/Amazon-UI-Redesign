@@ -86,7 +86,7 @@ function Navbar() {
         <BsSearch
               style={{
                 backgroundColor: "#ff9900",
-                padding: 10.8,
+                padding: 11,
                 borderTopRightRadius: 8,
                 borderBottomRightRadius: 8,
                 marginRight: 10

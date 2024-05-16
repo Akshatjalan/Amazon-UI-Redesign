@@ -29,6 +29,6 @@ body {
   .loader img {
     display: flex;
     justify-content:center;
-    height: 32svh;
+    height: 40svh;
   }
 }
