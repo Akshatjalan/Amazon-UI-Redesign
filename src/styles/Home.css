@@ -520,6 +520,10 @@
 
 @media only screen and (max-width: 900px) {
 
+  .heroContainer{
+    display: none;
+  }
+
   .productsHeaders {
     font-size: 15px;
   }
@@ -542,13 +546,23 @@
     padding-right: 10px;
     min-width: 240px;
   }
-/* 
+
   .bannerHeading{
-    font-size: 22px;
-  } */
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
 
   .bannerImg img {
     height: 280px;
+  }
+
+  .bannerContainer {
+    gap: 0px;
+    flex-direction: column;
+    height: auto;
+    padding: 28px;
+    margin: 0px;
+    border-radius: 0px;
   }
 
   .bannerDesc {
@@ -556,12 +570,20 @@
   }
 
   .categoryHeaders{
-    font-size: 15px;
+    font-size: 16px;
   }
+
+  .categoryItems {
+    justify-content:flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow: scroll;
+}
 
   .categoryitemCard{
     font-size: 16px;
     gap: 12px;
+    min-width: 100%;
   }
 
   .categoryitemCard>img {

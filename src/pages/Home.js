@@ -30,7 +30,6 @@ import tshirt4Png from "../assets/t-shirt4.png";
 import shorts1Png from "../assets/shorts1.png";
 import trousers1Png from "../assets/trousers1.png";
 
-
 function Home() {
   return (
     <div>
@@ -161,15 +160,11 @@ function Home() {
         </div>
       </div>
 
-
-
       <div className="productsHeaders">
         <div>Pick up where you left off</div>
       </div>
       <div className="productsContainer">
         <div className="productsItems">
-          
-
           <div className="productsitemCard">
             <div className="productImg">
               <img src={shoes7Png} alt="profileDeals" />
@@ -184,7 +179,9 @@ function Home() {
               <img src={shoes5Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Nike</div>
-            <div className="productName">Nike Victory 2 Proto Athletics Spikes</div>
+            <div className="productName">
+              Nike Victory 2 Proto Athletics Spikes
+            </div>
             <div className="productPrice">₹ 16,995.00</div>
           </div>
 
@@ -238,10 +235,10 @@ function Home() {
           <img src={dogPng} alt="headphone" />
         </div>
       </div>
-    
+
       <div className="productsHeaders">
         <div>Amazon Top Sellers</div>
-        <div>See more →</div>
+        <div style={{ color: "#ff9900" }}>View All →</div>
       </div>
       <div className="productsContainer">
         <div className="productsItems">
@@ -259,7 +256,9 @@ function Home() {
               <img height="250px" src={tshirt2Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Men's Long-Sleeve T-Shirt</div>
-            <div className="productName">Nike Sportswear Premium Essentials</div>
+            <div className="productName">
+              Nike Sportswear Premium Essentials
+            </div>
             <div className="productPrice">₹ 2,695.00</div>
           </div>
 
@@ -286,7 +285,9 @@ function Home() {
               <img height="250px" src={trousers1Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Men's Carpenter Trousers</div>
-            <div className="productName">Khaki/Khaki Colour Carpenter Trousers</div>
+            <div className="productName">
+              Khaki/Khaki Colour Carpenter Trousers
+            </div>
             <div className="productPrice">₹ 5,995.00</div>
           </div>
 
@@ -295,7 +296,9 @@ function Home() {
               <img height="250px" src={tshirt4Png} alt="profileDeals" />
             </div>
             <div className="productBrand">Men's Neck Top Sweatshirt</div>
-            <div className="productName">Men's Dri-FIT Fleece Fitness Crew-Neck Top</div>
+            <div className="productName">
+              Men's Dri-FIT Fleece Fitness Crew-Neck Top
+            </div>
             <div className="productPrice">₹ 2,495.00</div>
           </div>
         </div>
