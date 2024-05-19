@@ -238,7 +238,7 @@ function Home() {
 
       <div className="productsHeaders">
         <div>Amazon Top Sellers</div>
-        <div style={{ color: "#ff9900" }}>View All →</div>
+        <div>→</div>
       </div>
       <div className="productsContainer">
         <div className="productsItems">
