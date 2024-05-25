@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import loader from "./assets/loaderSpinner.gif";
+import Footer from "./components/Footer";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,10 +27,10 @@ function App() {
     <Router>
       <div>
         <Navbar />
-
         <Routes>
           <Route exact path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

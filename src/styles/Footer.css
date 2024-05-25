@@ -1,0 +1,33 @@
+.footerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 24vh;
+  background-color: #232f3e;
+  color: white;
+  margin-bottom: 0;
+  margin-top: 0;
+  gap: 80px;
+}
+
+.footerContainer > ul > li {
+  justify-content: flex-start;
+  padding: 3px;
+}
+
+.footerTopContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  margin-top: 44px;
+  margin-bottom: 0;
+  background-color: #37475a;
+  color: white;
+  text-decoration: none;
+}
+
+.footerTopContainer:hover {
+  background-color: #485769;
+  cursor: pointer;
+}
