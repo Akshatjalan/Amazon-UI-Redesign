@@ -1,8 +1,8 @@
-<h1 align="center">Amazon UI Redesign</h1>
+<h1 align="center">Amazon Redesign</h1>
 
 <p align="center">🚀 Excited to share my latest project — a fresh UI redesign for Amazon.in! 👨‍💻✨
 
-🌟 As a passionate developer, I took the initiative to revamp Amazon's interface to enhance user experience. The landing page redesign is live and built using ReactJS, Javascript, HTML, and CSS. 💡
+🌟 As a passionate developer, I took the initiative to revamp Amazon's interface to enhance user experience. The landing page redesign is live and built using `MERN STACK` - `MongoDB`, `ExpressJS`, `ReactJS`, `NodeJS`, `Javascript`, `HTML`, and `CSS`. 💡
 
 🎯 Stay tuned as I continue to expand this project by developing a complete website redesign with backend integration. 🛠️.<p>
 
@@ -15,7 +15,7 @@
 :star:  Star me on GitHub — it helps!
 
 # Features
-Build using `ReactJS`, `Javascript`, `HTML`, `CSS`
+Build using `ReactJS`, `NodeJS`, `MongoDB`, `Javascript`, `HTML`, `CSS`, `Stripe`
 
 ## Contact 
  <h3 align="center">
