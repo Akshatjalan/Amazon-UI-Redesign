@@ -246,7 +246,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 40vh;
+  /* height: 40vh; */
+  height: auto;
   min-width: 28vh;
   padding: 30px;
   border-radius: 4px;
@@ -340,14 +341,15 @@
   /* PRODUCTS SECTION */
 
   .productsItems {
-    /* gap: 40px; */
+    gap: 20px;
     overflow-x: scroll;
     overflow-y: hidden;
     }
 
   .productsitemCard {
     padding-top: 0px;
-    height: 45vh;
+    /* height: 45vh; */
+    height: auto;
   }
 }
 

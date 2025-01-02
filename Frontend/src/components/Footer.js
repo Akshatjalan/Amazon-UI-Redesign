@@ -4,7 +4,7 @@ import "../styles/Footer.css";
 function Footer() {
   return (
     <div>
-      <a className="footerTopContainer" href="#">
+      <a className="footerTopContainer" href="/">
         Back to top
       </a>
       <div className="footerContainer">

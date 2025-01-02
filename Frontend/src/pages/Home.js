@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import iphonePng from "../assets/iphoneBlack.jpg";
 import watchPng from "../assets/appleWatch.jpg";
@@ -40,10 +41,15 @@ function Home() {
             Shop laptops, desktops, monitors, tablets, PC gaming, hard drives
             and storage, Accessories and more
           </div>
+          
+
           <button className="heroButton">
+            <Link to="/Products">
             <div>Explore all Products</div>
-            <span>➜</span>
+            <span>➜</span>          
+            </Link>
           </button>
+
         </div>
 
         <Swiper

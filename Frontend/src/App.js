@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import loader from "./assets/loaderSpinner.gif";
 import Footer from "./components/Footer";
+import Products from "./pages/Products";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/products" element={<Products />} />
         </Routes>
         <Footer />
       </div>
