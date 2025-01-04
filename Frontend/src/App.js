@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import loader from "./assets/loaderSpinner.gif";
 import Footer from "./components/Footer";
 import Products from "./pages/Products";
+import ProductDetails from "./pages/ProductDetails";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -31,6 +32,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/products" element={<Products />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
         </Routes>
         <Footer />
       </div>

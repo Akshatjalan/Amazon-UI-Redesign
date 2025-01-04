@@ -8,7 +8,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import userPng from "../assets/user.png";
+import userPng from "../assets/userAvatar.png";
 import orderPng from "../assets/order_package.svg";
 import mobilePng from "../assets/mobile.png";
 import kitchenPng from "../assets/kitchen.png";
@@ -17,20 +17,8 @@ import laptopPng from "../assets/Laptop.png";
 import beautyPng from "../assets/sneakers.png";
 import toysPng from "../assets/toys.png";
 import kitchenAppliancePng from "../assets/kitchenAppliances.png";
-import shoes1Png from "../assets/Shoes 1.png";
-import shoes2Png from "../assets/Shoes 2.png";
-import shoes3Png from "../assets/Shoes 3.png";
-import shoes4Png from "../assets/Shoes 4.png";
-import shoes5Png from "../assets/Shoes 5.png";
 import shoes6Png from "../assets/Shoes 6.PNG";
-import shoes7Png from "../assets/Shoes 7.png";
-import shoes9Png from "../assets/Shoes 9.png";
-import tshirt1Png from "../assets/t-shirt1.png";
-import tshirt2Png from "../assets/t-shirt2.png";
-import tshirt3Png from "../assets/t-shirt3.png";
-import tshirt4Png from "../assets/t-shirt4.png";
-import shorts1Png from "../assets/shorts1.png";
-import trousers1Png from "../assets/trousers1.png";
+import Products from "./Products";
 
 function Home() {
   return (
@@ -42,13 +30,12 @@ function Home() {
             Shop laptops, desktops, monitors, tablets, PC gaming, hard drives
             and storage, Accessories and more
           </div>
-
-          <button className="heroButton">
-            <Link to="/Products">
+          <Link to="/Products" className="allProductsButton">
+            <button className="heroButton">
               <div>Explore all Products</div>
               <span>➜</span>
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
 
         <Swiper
@@ -111,7 +98,7 @@ function Home() {
       <div className="accountContainer">
         <div className="accountItems">
           <div className="itemCard">
-            <img width="92px" src={userPng} alt="profileDeals" />
+            <img width="70px" src={userPng} alt="profileDeals" />
             <div>
               <div> Hi, Akshat</div>
               <div> recommendations for you</div>
@@ -165,77 +152,7 @@ function Home() {
         </div>
       </div>
 
-      <div className="productsHeaders">
-        <div>Pick up where you left off</div>
-      </div>
-      <div className="productsContainer">
-        <div className="productsItems">
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img src={shoes7Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">Nike Dunk High Retro series</div>
-            <div className="productPrice">₹ 9,495.00</div>
-          </div>
-
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img src={shoes5Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">
-              Nike Victory 2 Proto Athletics Spikes
-            </div>
-            <div className="productPrice">₹ 16,995.00</div>
-          </div>
-
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img src={shoes3Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">Nike Phantom GX 2 Elite SE</div>
-            <div className="productPrice">₹ 23,795.00</div>
-          </div>
-
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img src={shoes9Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">Nike Offcourt slides Man series</div>
-            <div className="productPrice">₹ 2,995.00</div>
-          </div>
-
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img src={shoes4Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">Nike Air Max Plus Man series</div>
-            <div className="productPrice">₹ 15,995.00</div>
-          </div>
-
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img src={shoes2Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">Nike SB Zoom Janoski OG+ series</div>
-            <div className="productPrice">₹ 8,595.00</div>
-          </div>
-
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img src={shoes1Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Nike</div>
-            <div className="productName">Nike G.T cut 3 Episode series</div>
-            <div className="productPrice">₹ 17,495.00</div>
-          </div>
-        </div>
-      </div>
+      <Products />
 
       <div className="bannerContainer">
         <div className="bannerContainerLeft">
@@ -254,69 +171,7 @@ function Home() {
         <div>Amazon Top Sellers</div>
         <div>→</div>
       </div>
-      <div className="productsContainer">
-        <div className="productsItems">
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img height="250px" src={tshirt1Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Men's T-shirt</div>
-            <div className="productName">Hawai Sportswear Men's T-shirt</div>
-            <div className="productPrice">₹ 1,195.00</div>
-          </div>
-
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img height="250px" src={tshirt2Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Men's Long-Sleeve T-Shirt</div>
-            <div className="productName">
-              Nike Sportswear Premium Essentials
-            </div>
-            <div className="productPrice">₹ 2,695.00</div>
-          </div>
-
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img height="250px" src={shorts1Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Men's shorts</div>
-            <div className="productName">Running division Men's shorts</div>
-            <div className="productPrice">₹ 1,495.00</div>
-          </div>
-
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img height="250px" src={tshirt3Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Girl's Crop Top</div>
-            <div className="productName">Hydrangeas/White Girls Crop Top</div>
-            <div className="productPrice">₹ 1,995.00</div>
-          </div>
-
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img height="250px" src={trousers1Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Men's Carpenter Trousers</div>
-            <div className="productName">
-              Khaki/Khaki Colour Carpenter Trousers
-            </div>
-            <div className="productPrice">₹ 5,995.00</div>
-          </div>
-
-          <div className="productsitemCard">
-            <div className="productImg">
-              <img height="250px" src={tshirt4Png} alt="profileDeals" />
-            </div>
-            <div className="productBrand">Men's Neck Top Sweatshirt</div>
-            <div className="productName">
-              Men's Dri-FIT Fleece Fitness Crew-Neck Top
-            </div>
-            <div className="productPrice">₹ 2,495.00</div>
-          </div>
-        </div>
-      </div>
+      <Products />
     </div>
   );
 }

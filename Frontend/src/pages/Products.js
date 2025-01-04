@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import axios from "axios";
 
@@ -8,9 +9,6 @@ function Products() {
   useEffect(() => {
     const fetchProducts = async () => {
       const { data } = await axios.get("http://localhost:5000/products");
-      const TshirtProducts = data.filter(
-        (product) => product.type === "Tshirt"
-      );
       setProducts(data);
     };
     fetchProducts();
@@ -24,14 +22,16 @@ function Products() {
       <div className="productsContainer">
         <div className="productsItems">
           {products.map((product) => (
-            <div key={product._id} className="productsitemCard">
-              <div className="productImg">
-                <img src={product.image} alt={product.name} />
+            <Link to={`/products/${product._id}`}>
+              <div key={product._id} className="productsitemCard">
+                <div className="productImg">
+                  <img src={product.image} alt={product.name} />
+                </div>
+                <div className="productBrand">{product.brand}</div>
+                <div className="productName">{product.name}</div>
+                <div className="productPrice">₹ {product.price}</div>
               </div>
-              <div className="productBrand">{product.brand}</div>
-              <div className="productName">{product.name}</div>
-              <div className="productPrice">₹ {product.price}</div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

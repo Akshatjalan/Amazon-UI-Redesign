@@ -40,6 +40,22 @@ app.get("/products", async (req, res) => {
   }
 });
 
+// Get product by ID
+app.get("/products/:id", async (req, res) => {
+  const { id } = req.params;
+  try {
+    const product = await Product.findById(id);
+    console.log("product:", product);
+    if (!product) {
+      return res.status(404).json({ error: "Product not Found!" });
+    }
+    res.json(product);
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    res.status(500).json({ error: "Failed to fetch product details" });
+  }
+});
+
 // Start Server
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

@@ -1,7 +1,7 @@
 body {
   /* font-family: "Montserrat" */
   font-family: emberRegular, sans-serif;
-  /* background-color: #F5F5FA; */
+  background-color: #f5f5fa;
 }
 
 @font-face {
@@ -24,6 +24,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: white;
 }
 
 @media only screen and (max-width: 900px) {
