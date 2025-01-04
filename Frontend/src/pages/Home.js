@@ -98,7 +98,7 @@ function Home() {
       <div className="accountContainer">
         <div className="accountItems">
           <div className="itemCard">
-            <img width="70px" src={userPng} alt="profileDeals" />
+            <img width="50px" src={userPng} alt="profileDeals" />
             <div>
               <div> Hi, Akshat</div>
               <div> recommendations for you</div>
@@ -152,7 +152,11 @@ function Home() {
         </div>
       </div>
 
-      <Products />
+      <div className="productsHeaders">
+        <div>Pick up where you left off</div>
+        <div>→</div>
+      </div>
+      <Products type="Shoes" />
 
       <div className="bannerContainer">
         <div className="bannerContainerLeft">
@@ -168,7 +172,17 @@ function Home() {
       </div>
 
       <div className="productsHeaders">
-        <div>Amazon Top Sellers</div>
+        <div>Tops & T-Shirts Clothing</div>
+      </div>
+      <Products type="Tshirt" />
+
+      <div className="productsHeaders">
+        <div>Pants & Leggings Clothing</div>
+      </div>
+      <Products type="BottomWear" />
+
+      <div className="productsHeaders">
+        <div>All Our Products</div>
         <div>→</div>
       </div>
       <Products />

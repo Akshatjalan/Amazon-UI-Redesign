@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import "../styles/productDetails.css";
 
 const ProductDetails = () => {
   const { id } = useParams(); // Get product ID from URL
@@ -27,24 +28,35 @@ const ProductDetails = () => {
   }
 
   return (
-    <div>
-      <h1>{product.name}</h1>
-      <img src={product.image} alt={product.name} style={{ width: "300px" }} />
-      <p>
-        <strong>Brand:</strong> {product.brand}
-      </p>
-      <p>
-        <strong>Description:</strong> {product.description}
-      </p>
-      <p>
-        <strong>Type:</strong> {product.type}
-      </p>
-      <p>
-        <strong>Price:</strong> ₹{product.price}
-      </p>
-      <button onClick={() => alert(`${product.name} added to cart!`)}>
-        Add to Cart
-      </button>
+    <div className="productDetailsPage">
+      <br />
+      <Link to="/">￩Back</Link>
+      <div className="productDetailHeaders">
+        <h1>{product.name}</h1>
+      </div>
+      <div className="productDetailContainer">
+        <div className="productDetailLeft">
+          <img
+            src={product.image}
+            alt={product.name}
+            style={{ width: "500px" }}
+          />
+        </div>
+        <div className="productDetailRight">
+          <div className="productItemDetails">
+            <div className="productBrand">{product.brand}</div>
+            <div className="productName">{product.name}</div>
+            <div className="productDesc">{product.description}</div>
+            <div className="productPrice">MRP: ₹ {product.price}.00</div>
+          </div>
+          <button
+            className="productDetailButton"
+            onClick={() => alert(`${product.name} added to cart!`)}
+          >
+            Add to Cart
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

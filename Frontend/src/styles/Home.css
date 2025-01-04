@@ -1,11 +1,12 @@
 ::-webkit-scrollbar {
-  height: 5px;
+  height: 6px;
   width: 8px;
 }
 
-/* ::-webkit-scrollbar-track{
-  background-color: #c0c0c0a3;
-} */
+::-webkit-scrollbar-track {
+  background-color: #e2e2e2a3;
+  border-radius: 4px;
+}
 
 ::-webkit-scrollbar-thumb {
   background: #c0c0c0;
@@ -264,14 +265,20 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  height: 40vh;
-  /* height: auto; */
+  /* height: 40vh; */
+  height: auto;
   min-width: 28vh;
   padding: 12px;
   border-radius: 4px;
   overflow: hidden;
   background-color: white;
   margin-bottom: 20px;
+}
+
+.productItemDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .productBrand {
@@ -281,11 +288,13 @@
 .productName {
   font-size: 20px;
   font-weight: 500;
+  height: 70px;
 }
 
 .productPrice {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
+  display: flex;
 }
 
 .productImg {
