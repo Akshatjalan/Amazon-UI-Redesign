@@ -8,11 +8,13 @@ function Products() {
   useEffect(() => {
     const fetchProducts = async () => {
       const { data } = await axios.get("http://localhost:5000/products");
+      const TshirtProducts = data.filter(
+        (product) => product.type === "Tshirt"
+      );
       setProducts(data);
     };
     fetchProducts();
-  }, []);  
-
+  }, []);
 
   return (
     <div>

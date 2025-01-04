@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  height: 3px;
+  height: 5px;
   width: 8px;
 }
 
@@ -7,13 +7,14 @@
   background-color: #c0c0c0a3;
 } */
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: #c0c0c0;
   border-radius: 4px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: #aaaaaa;
+  cursor: pointer;
 }
 
 .heroContainer {
@@ -187,6 +188,7 @@
   padding: 0;
   padding-left: 80px;
   margin-bottom: 0;
+  overflow: hidden;
 }
 
 .bannerContainerLeft {
@@ -210,7 +212,7 @@
 }
 
 .bannerImg img {
-  height: 480px;
+  height: 400px;
 }
 
 /* PRODUCTS CONTAINER */
@@ -276,7 +278,7 @@
 }
 
 .productImg > img {
-  height: 250px; 
+  height: 250px;
 }
 
 /* Medium size screen */
@@ -335,7 +337,7 @@
   }
 
   .bannerImg img {
-    height: 460px;
+    height: 400px;
   }
 
   /* PRODUCTS SECTION */
@@ -344,7 +346,7 @@
     gap: 20px;
     overflow-x: scroll;
     overflow-y: hidden;
-    }
+  }
 
   .productsitemCard {
     padding-top: 0px;
@@ -373,12 +375,11 @@
   }
 
   .productImg > img {
-    height: 240px; 
+    height: 240px;
   }
 }
 
 @media only screen and (max-width: 1250px) {
-
   ::-webkit-scrollbar {
     display: none;
   }
@@ -502,14 +503,14 @@
   /* PRODUCT SECTION */
 
   .productImg > img {
-    height: 220px; 
+    height: 220px;
   }
 
   .productName {
     font-size: 16px;
     font-weight: 500;
   }
-  
+
   .productPrice {
     font-size: 16px;
     font-weight: 500;
@@ -521,8 +522,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-
-  .heroContainer{
+  .heroContainer {
     display: none;
   }
 
@@ -530,7 +530,7 @@
     font-size: 15px;
   }
 
-  .accountContainer{
+  .accountContainer {
     height: 14vh;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -540,7 +540,7 @@
     gap: 16px;
     width: 100%;
   }
-  
+
   .itemCard {
     font-weight: 600;
     font-size: 12px;
@@ -549,7 +549,7 @@
     min-width: 240px;
   }
 
-  .bannerHeading{
+  .bannerHeading {
     font-size: 30px;
     letter-spacing: -1px;
   }
@@ -571,24 +571,24 @@
     font-size: 18px;
   }
 
-  .categoryHeaders{
+  .categoryHeaders {
     font-size: 16px;
   }
 
   .categoryItems {
-    justify-content:flex-start;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     width: 100%;
     overflow: scroll;
-}
+  }
 
-  .categoryitemCard{
+  .categoryitemCard {
     font-size: 16px;
     gap: 12px;
     min-width: 100%;
   }
 
-  .categoryitemCard>img {
+  .categoryitemCard > img {
     width: 220px;
   }
 }

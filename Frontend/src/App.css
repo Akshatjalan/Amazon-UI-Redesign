@@ -1,6 +1,7 @@
 body {
   /* font-family: "Montserrat" */
   font-family: emberRegular, sans-serif;
+  /* background-color: #F5F5FA; */
 }
 
 @font-face {
@@ -28,7 +29,7 @@ body {
 @media only screen and (max-width: 900px) {
   .loader img {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     height: 40svh;
   }
 }

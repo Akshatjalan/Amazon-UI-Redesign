@@ -24,6 +24,7 @@ import shoes4Png from "../assets/Shoes 4.png";
 import shoes5Png from "../assets/Shoes 5.png";
 import shoes6Png from "../assets/Shoes 6.PNG";
 import shoes7Png from "../assets/Shoes 7.png";
+import shoes9Png from "../assets/Shoes 9.png";
 import tshirt1Png from "../assets/t-shirt1.png";
 import tshirt2Png from "../assets/t-shirt2.png";
 import tshirt3Png from "../assets/t-shirt3.png";
@@ -41,15 +42,13 @@ function Home() {
             Shop laptops, desktops, monitors, tablets, PC gaming, hard drives
             and storage, Accessories and more
           </div>
-          
 
           <button className="heroButton">
             <Link to="/Products">
-            <div>Explore all Products</div>
-            <span>➜</span>          
+              <div>Explore all Products</div>
+              <span>➜</span>
             </Link>
           </button>
-
         </div>
 
         <Swiper
@@ -198,6 +197,15 @@ function Home() {
             <div className="productBrand">Nike</div>
             <div className="productName">Nike Phantom GX 2 Elite SE</div>
             <div className="productPrice">₹ 23,795.00</div>
+          </div>
+
+          <div className="productsitemCard">
+            <div className="productImg">
+              <img src={shoes9Png} alt="profileDeals" />
+            </div>
+            <div className="productBrand">Nike</div>
+            <div className="productName">Nike Offcourt slides Man series</div>
+            <div className="productPrice">₹ 2,995.00</div>
           </div>
 
           <div className="productsitemCard">
