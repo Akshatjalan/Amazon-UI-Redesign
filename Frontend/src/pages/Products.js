@@ -6,9 +6,12 @@ import axios from "axios";
 function Products({ type }) {
   const [products, setProducts] = useState([]);
 
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  // const API_BASE_URL = "http://localhost:5000" local work
+
   useEffect(() => {
     const fetchProducts = async () => {
-      const { data } = await axios.get("http://localhost:5000/products");
+      const { data } = await axios.get(`${API_BASE_URL}/products`);
       if (type) {
         const filteredProducts = data.filter(
           (product) => product.type === type
@@ -19,7 +22,7 @@ function Products({ type }) {
       }
     };
     fetchProducts();
-  }, [type]);
+  }, [type, API_BASE_URL]);
 
   return (
     <div>

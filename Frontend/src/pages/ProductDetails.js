@@ -6,11 +6,14 @@ const ProductDetails = () => {
   const { id } = useParams(); // Get product ID from URL
   const [product, setProduct] = useState(null);
 
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  // const API_BASE_URL = "http://localhost:5000" local work
+
   useEffect(() => {
-    fetch(`http://localhost:5000/products/${id}`)
+    fetch(`${API_BASE_URL}/products/${id}`)
       .then((response) => response.json())
       .then((data) => setProduct(data));
-  }, [id]);
+  }, [id, API_BASE_URL]);
 
   if (!product) {
     return (
