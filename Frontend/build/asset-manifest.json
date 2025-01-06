@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d615d1a1.css",
+    "main.js": "/static/js/main.0ad4bac7.js",
+    "static/media/mobile.png": "/static/media/mobile.ad9355a389a29ca6108e.png",
+    "static/media/dog.png": "/static/media/dog.ec3e3cff90f3266aa6fc.png",
+    "static/media/kitchenAppliances.png": "/static/media/kitchenAppliances.33cfd48ac418c1bd235a.png",
+    "static/media/loaderSpinner.gif": "/static/media/loaderSpinner.0413b0b217fd0465df79.gif",
+    "static/media/Laptop.png": "/static/media/Laptop.303d6502a3cd02df191e.png",
+    "static/media/Shoes 6.PNG": "/static/media/Shoes 6.1ab42d144b50e937e804.PNG",
+    "static/media/kitchen.png": "/static/media/kitchen.eb06cba2327bf03bc16b.png",
+    "static/media/toys.png": "/static/media/toys.bed185e96aaa5171ff4c.png",
+    "static/media/order_package.svg": "/static/media/order_package.e8fc37f312ad79ef7e507160b781c6f6.svg",
+    "static/media/appleWatch.jpg": "/static/media/appleWatch.1897f71a81d6e5ba7028.jpg",
+    "static/media/iphoneBlack.jpg": "/static/media/iphoneBlack.8a14003623f2e03cae61.jpg",
+    "static/media/AmazonEmber_Rg.ttf": "/static/media/AmazonEmber_Rg.49d0b49cda15e913fdf2.ttf",
+    "static/media/AmazonEmber_Bd.ttf": "/static/media/AmazonEmber_Bd.4c4b1f27a546fbfe585f.ttf",
+    "static/media/AmazonEmber_He.ttf": "/static/media/AmazonEmber_He.7d7135d2abf99880fd2b.ttf",
+    "static/media/sneakers.png": "/static/media/sneakers.91857a9ff8fd9bc16aee.png",
+    "static/media/userAvatar.png": "/static/media/userAvatar.83c2f83bbdeb5e5809d1.png",
+    "static/media/amazon-logo.svg": "/static/media/amazon-logo.2885bf4f5b7d3cb82aa66ef0bb6a0264.svg",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.d615d1a1.css.map": "/static/css/main.d615d1a1.css.map",
+    "main.0ad4bac7.js.map": "/static/js/main.0ad4bac7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d615d1a1.css",
+    "static/js/main.0ad4bac7.js"
+  ]
+}
