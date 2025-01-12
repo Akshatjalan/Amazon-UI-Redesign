@@ -33,7 +33,7 @@ const ProductDetails = () => {
   return (
     <div className="productDetailsPage">
       <br />
-      <Link to="/">🡰 Back</Link>
+      <Link to="/">&#10094; Back</Link>
       <div className="productDetailHeaders">
         <h1>{product.name}</h1>
       </div>

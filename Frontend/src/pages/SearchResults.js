@@ -8,21 +8,24 @@ function SearchResults() {
   const query = new URLSearchParams(location.search).get("q");
   const [products, setProducts] = useState([]);
 
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  // const API_BASE_URL = "http://localhost:5000" local work
+
   useEffect(() => {
     if (query) {
-      fetch(`http://localhost:5000/products/search?q=${query}`)
+      fetch(`${API_BASE_URL}products/search?q=${query}`)
         .then((res) => res.json())
         .then((data) => setProducts(data))
         .catch((error) =>
           console.error("Error fetching search results:", error)
         );
     }
-  }, [query]);
+  }, [query, API_BASE_URL]);
 
   return (
     <div className="productDetailsPage">
       <br />
-      <Link to="/">🡰 Back</Link>
+      <Link to="/">&#10094; Back</Link>
       <h2>Search Results for "{query}"</h2>
       {products.length > 0 ? (
         <div className="productGrid">
