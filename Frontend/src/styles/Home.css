@@ -229,6 +229,7 @@
 /* PRODUCTS CONTAINER */
 
 .productsContainer {
+  position: relative;
   display: flex;
   align-items: center;
   margin: 30px;
@@ -249,11 +250,11 @@
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 20px;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  overflow-x: hidden;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 .productsItems a {
@@ -306,6 +307,33 @@
 .productImg > img {
   height: 250px;
   border-radius: 4px;
+}
+
+/* SCROLL New styles for scroll buttons*/
+
+.scrollButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #37475a;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.scrollButton.left {
+  left: -12px;
+}
+
+.scrollButton.right {
+  right: -12px;
 }
 
 /* Medium size screen */
@@ -408,6 +436,15 @@
 @media only screen and (max-width: 1250px) {
   ::-webkit-scrollbar {
     display: none;
+  }
+
+  /* 🟨 Media query to hide scroll buttons */
+  .scrollButton {
+    display: none; /* 🟨 Hide scroll buttons */
+  }
+
+  .productsItems {
+    overflow-x: scroll; /* 🟨 Re-enable scrollbar for smaller screens */
   }
 
   .heroContainer {

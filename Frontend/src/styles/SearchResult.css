@@ -1,0 +1,11 @@
+.searchResultContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  flex-wrap: wrap;
+  padding: 30px;
+  border: 1px solid;
+  margin-bottom: 28px;
+  border-radius: 10px;
+}

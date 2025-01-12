@@ -7,6 +7,7 @@ import loader from "./assets/loaderSpinner.gif";
 import Footer from "./components/Footer";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
+import SearchResults from "./pages/SearchResults";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +34,7 @@ function App() {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetails />} />
+          <Route path="/search" element={<SearchResults />} />
         </Routes>
         <Footer />
       </div>

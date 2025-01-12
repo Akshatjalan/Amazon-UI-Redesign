@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 import logo from "../assets/amazon-logo.svg";
 import userPng from "../assets/userAvatar.png";
@@ -10,6 +11,15 @@ import { BsBagCheck } from "react-icons/bs";
 import { MdOutlineLocationOn } from "react-icons/md";
 
 function Navbar() {
+  const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
+
+  const handleSearch = () => {
+    if (searchQuery.trim()) {
+      navigate(`/search?q=${searchQuery.trim()}`);
+    }
+  };
+
   return (
     <div>
       <div className="navbar">
@@ -25,6 +35,9 @@ function Navbar() {
               name="Search"
               type="text"
               placeholder="Search Amazon Products"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              onKeyPress={(e) => e.key === "Enter" && handleSearch()}
             />
             <BsSearch
               style={{
@@ -35,6 +48,7 @@ function Navbar() {
               }}
               color="#FFFF"
               size="20"
+              onClick={handleSearch}
             />
           </div>
         </div>
@@ -84,16 +98,16 @@ function Navbar() {
           placeholder="Search Amazon Products"
         />
         <BsSearch
-              style={{
-                backgroundColor: "#ff9900",
-                padding: 11,
-                borderTopRightRadius: 8,
-                borderBottomRightRadius: 8,
-                marginRight: 10
-              }}
-              color="#FFFF"
-              size="20"
-            />
+          style={{
+            backgroundColor: "#ff9900",
+            padding: 11,
+            borderTopRightRadius: 8,
+            borderBottomRightRadius: 8,
+            marginRight: 10,
+          }}
+          color="#FFFF"
+          size="20"
+        />
       </div>
 
       <div className="navbarBottom">

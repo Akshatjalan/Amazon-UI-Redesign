@@ -29,6 +29,8 @@ const productSchema = new mongoose.Schema({
 const Product = mongoose.model("Product", productSchema);
 
 // Routes
+
+// Get all products
 app.get("/products", async (req, res) => {
   try {
     const products = await Product.find();
@@ -37,6 +39,25 @@ app.get("/products", async (req, res) => {
   } catch (error) {
     console.error("Error fetching products:", error);
     res.status(500).json({ error: "Failed to fetch products" });
+  }
+});
+
+// Search Products by Query
+app.get("/products/search", async (req, res) => {
+  const { q } = req.query;
+  try {
+    const products = await Product.find({
+      $or: [
+        { name: { $regex: q, $options: "i" } },
+        { brand: { $regex: q, $options: "i" } },
+        { description: { $regex: q, $options: "i" } },
+        { type: { $regex: q, $options: "i" } },
+      ],
+    });
+    res.json(products);
+  } catch (error) {
+    console.error("Error searching products:", error);
+    res.status(500).json({ error: "Failed to search products" });
   }
 });
 
@@ -51,7 +72,7 @@ app.get("/products/:id", async (req, res) => {
     }
     res.json(product);
   } catch (error) {
-    console.error("Error fetching products:", error);
+    console.error("Error fetching product:", error);
     res.status(500).json({ error: "Failed to fetch product details" });
   }
 });

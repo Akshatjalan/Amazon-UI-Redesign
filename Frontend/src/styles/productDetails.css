@@ -44,12 +44,14 @@
   margin-bottom: 20px;
 }
 
+.productDetailsPage {
+  margin: 10px 40px;
+}
+
 .productDetailsPage a {
   text-decoration: none;
   color: #000;
   font-size: 18px;
-  margin-top: 20px;
-  margin-left: 20px;
 }
 
 .productDetailsPage a:hover {
