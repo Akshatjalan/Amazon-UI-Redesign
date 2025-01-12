@@ -96,6 +96,9 @@ function Navbar() {
           name="Search"
           type="text"
           placeholder="Search Amazon Products"
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyPress={(e) => e.key === "Enter" && handleSearch()}
         />
         <BsSearch
           style={{
@@ -107,6 +110,7 @@ function Navbar() {
           }}
           color="#FFFF"
           size="20"
+          onClick={handleSearch}
         />
       </div>
 
