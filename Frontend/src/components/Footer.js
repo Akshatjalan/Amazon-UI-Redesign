@@ -3,37 +3,56 @@ import "../styles/Footer.css";
 
 function Footer() {
   return (
-    <div>
-      <a className="footerTopContainer" href="/">
+    <div className="footer">
+      <a className="footerTopContainer" href="#top">
         Back to top
       </a>
       <div className="footerContainer">
         <ul>
           <li>
-            <b>Get to Know Us</b>
+            <b>Contact</b>
           </li>
-          <li>About Us</li>
-          <li>Careers</li>
-          <li>Press Releases</li>
-          <li>Amazon Science </li>
+          <li>
+            <a
+              href="mailto:akshatjalanmain@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Gmail
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/akshat-jalan/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+          </li>
         </ul>
         <ul>
           <li>
-            <b>Connect with Us</b>
+            <b>Other Works</b>
           </li>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>Instagram</li>
-          <li>Amazon Science </li>
-        </ul>
-        <ul>
           <li>
-            <b>Let Us Help You</b>
+            <a
+              href="https://akshatjalan.github.io/devfolio/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Devfolio
+            </a>
           </li>
-          <li>COVID-19 and Amazon</li>
-          <li>Your Account</li>
-          <li>Returns Centre</li>
-          <li>100% Purchase Protection</li>
+          <li>
+            <a
+              href="https://github.com/Akshatjalan/DevFreelance"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Code FreeLance
+            </a>
+          </li>
         </ul>
       </div>
     </div>
