@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import "../styles/productDetails.css";
+import loaderImg from "../assets/loading-gif.gif";
 
 const ProductDetails = () => {
   const { id } = useParams(); // Get product ID from URL
@@ -19,13 +20,13 @@ const ProductDetails = () => {
     return (
       <p
         style={{
-          height: "50vh",
+          height: "55vh",
           fontSize: "40px",
           textAlign: "center",
           marginTop: "100px",
         }}
       >
-        Loading...
+        <img src={loaderImg} width="100px" alt="Loading..." />
       </p>
     );
   }

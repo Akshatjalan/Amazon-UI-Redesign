@@ -19,7 +19,7 @@
   font-family: emberbold;
   padding: 20px;
   border: none;
-  border-radius: 24px;
+  border-radius: 12px;
   font-size: 18px;
   cursor: pointer;
   background-color: #ff9900;
@@ -39,7 +39,7 @@
 }
 
 .productDesc {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -74,7 +74,7 @@
   }
 
   .productDetailHeaders {
-    font-size: 10px;
+    font-size: 12px;
     margin: 0;
   }
 }

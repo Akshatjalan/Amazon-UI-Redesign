@@ -54,11 +54,6 @@
   color: #ff9900;
 }
 
-.footerBottom {
-  font-size: 14px;
-  color: #6c757d;
-}
-
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .footerContainer {
@@ -85,14 +80,10 @@
   }
 
   .footerTopContainer {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .footerContainer ul li {
-    font-size: 12px;
-  }
-
-  .footerBottom {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
