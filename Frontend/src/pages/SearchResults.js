@@ -13,7 +13,7 @@ function SearchResults() {
 
   useEffect(() => {
     if (query) {
-      fetch(`${API_BASE_URL}products/search?q=${query}`)
+      fetch(`${API_BASE_URL}/products/search?q=${query}`)
         .then((res) => res.json())
         .then((data) => setProducts(data))
         .catch((error) =>
