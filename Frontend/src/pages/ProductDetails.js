@@ -50,7 +50,11 @@ const ProductDetails = () => {
           <div className="productItemDetails">
             <div className="productBrand">{product.brand}</div>
             <div className="productName">{product.name}</div>
-            <div className="productDesc">{product.description}</div>
+            <div className="productDesc">
+              <b>About this item:</b>
+              <br></br>
+              {product.description}
+            </div>
             <div className="productPrice">MRP: ₹ {product.price}.00</div>
           </div>
           <button

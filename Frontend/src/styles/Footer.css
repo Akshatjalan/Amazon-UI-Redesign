@@ -58,7 +58,7 @@
 @media screen and (max-width: 768px) {
   .footerContainer {
     align-items: center;
-    gap: 20px;
+    gap: 40px;
   }
 
   .footerContainer ul {
@@ -76,7 +76,7 @@
 
 @media screen and (max-width: 480px) {
   .footerContainer {
-    gap: 10px;
+    gap: 40px;
   }
 
   .footerTopContainer {

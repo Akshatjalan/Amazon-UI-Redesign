@@ -134,19 +134,19 @@ function Home() {
       <div className="categoryContainer">
         <div className="categoryItems">
           <div className="categoryitemCard">
-            <div>Computers and Accessories</div>
+            <div>All Clothing</div>
             <img width="400px" src={laptopPng} alt="profileDeals" />
           </div>
           <div className="categoryitemCard">
-            <div>Sneakers and shoes</div>
+            <div>Sneakers & Shoes</div>
             <img width="300px" src={beautyPng} alt="profileDeals" />
           </div>
           <div className="categoryitemCard">
-            <div>kitchen Appliances</div>
+            <div>Bags & Backpacks</div>
             <img width="400px" src={kitchenAppliancePng} alt="profileDeals" />
           </div>
           <div className="categoryitemCard">
-            <div>Toys and Games</div>
+            <div>Hats & Caps</div>
             <img width="300px" src={toysPng} alt="profileDeals" />
           </div>
         </div>
