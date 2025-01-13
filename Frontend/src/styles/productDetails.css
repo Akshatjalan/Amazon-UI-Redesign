@@ -60,8 +60,12 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .productDetailsPage a {
+    display: none;
+  }
+
   .productDetailRight {
-    width: 80%;
+    width: 100%;
   }
 
   .productDetailLeft > img {
@@ -70,6 +74,7 @@
   }
 
   .productDetailHeaders {
-    font-size: 14px;
+    font-size: 10px;
+    margin: 0;
   }
 }

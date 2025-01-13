@@ -607,8 +607,8 @@
   .itemCard {
     font-weight: 600;
     font-size: 12px;
-    gap: 2px;
-    padding-right: 10px;
+    gap: 8px;
+    padding: 10px;
     min-width: 240px;
   }
 

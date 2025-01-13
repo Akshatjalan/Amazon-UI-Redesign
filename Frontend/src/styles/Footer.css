@@ -23,7 +23,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 60px;
   background-color: #232f3e;
   color: white;
   padding: 28px;
@@ -62,7 +62,6 @@
 /* Responsive Design */
 @media screen and (max-width: 768px) {
   .footerContainer {
-    flex-direction: column;
     align-items: center;
     gap: 20px;
   }
