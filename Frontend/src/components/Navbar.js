@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 import logo from "../assets/amazon-logo.svg";
 import userPng from "../assets/userAvatar.png";
-import { FaRegHeart } from "react-icons/fa";
+// import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
