@@ -1,0 +1,85 @@
+/* General styles for the auth container */
+.authContainer {
+  width: 100%;
+  max-width: 400px;
+  margin: 5% auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.authContainer h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.authContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.authContainer input {
+  font-size: 16px;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.authContainer input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* .authContainer button {
+  font-size: 16px;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.authContainer button:hover {
+  background-color: #0056b3;
+} */
+
+.authContainer a {
+  display: block;
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.authContainer a:hover {
+  color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .authContainer {
+    width: 80%;
+    padding: 1.5rem;
+  }
+
+  .authContainer h2 {
+    font-size: 20px;
+  }
+
+  .authContainer input,
+  .authContainer button {
+    font-size: 14px;
+    padding: 0.7rem;
+  }
+}

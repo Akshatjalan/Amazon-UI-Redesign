@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 import logo from "../assets/amazon-logo.svg";
 import userPng from "../assets/userAvatar.png";
@@ -7,17 +7,25 @@ import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { BsBagCheck } from "react-icons/bs";
 import { MdOutlineLocationOn } from "react-icons/md";
 
 function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
+  const token = localStorage.getItem("token");
+  const userName = localStorage.getItem("userName");
 
   const handleSearch = () => {
     if (searchQuery.trim()) {
       navigate(`/search?q=${searchQuery.trim()}`);
     }
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem("token");
+    localStorage.removeItem("userName");
+    alert("You have been signed out.");
+    navigate("/signin");
   };
 
   return (
@@ -54,18 +62,33 @@ function Navbar() {
         </div>
         <div className="navbarRight">
           <ul className="navbarTopLinks">
+            {/* <li>
+              <Link to="/cart" className="cartLink">
+                <FaRegHeart title="Wishlist" />
+              </Link>
+            </li> */}
             <li>
-              <FaRegHeart title="Wishlist" />
+              <Link to="/cart" className="cartLink">
+                <FiShoppingCart title="Cart" />
+              </Link>
             </li>
-            <li>
-              <BsBagCheck title="Orders" />
-            </li>
-            <li>
-              <FiShoppingCart title="Cart" />
-            </li>
+            {token ? (
+              <li>
+                <button className="checkoutButton" onClick={handleLogout}>
+                  Logout
+                </button>
+              </li>
+            ) : (
+              <li>
+                <Link to="/cart" className="cartLink">
+                  Sign In
+                </Link>
+              </li>
+            )}
+
             <li>
               <img width="32px" src={userPng} alt="Amazon" />
-              <h4>&nbsp; Akshat</h4>
+              <h4>&nbsp; {userName}</h4>
             </li>
           </ul>
         </div>
@@ -80,11 +103,23 @@ function Navbar() {
         </div>
         <div className="navbarRight">
           <ul className="navbarTopLinksSmallScreen">
+            {token ? (
+              <li>
+                <button className="checkoutButton" onClick={handleLogout}>
+                  Logout
+                </button>
+              </li>
+            ) : (
+              <li>
+                <Link to="/cart" className="cartLink">
+                  Sign In
+                </Link>
+              </li>
+            )}
             <li>
-              <FaRegHeart title="Wishlist" size={20} />
-            </li>
-            <li>
-              <FiShoppingCart title="Cart" size={20} />
+              <Link to="/cart" className="cartLink">
+                <FiShoppingCart title="Cart" size={20} />
+              </Link>
             </li>
           </ul>
         </div>

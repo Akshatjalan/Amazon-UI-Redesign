@@ -18,7 +18,7 @@
   display: none;
 }
 
-.navbarSearchBarSmallScreen{
+.navbarSearchBarSmallScreen {
   display: none;
 }
 
@@ -74,13 +74,19 @@
   list-style: none;
 }
 
+.cartLink {
+  text-decoration: none;
+  color: white;
+  z-index: 2;
+}
+
 li {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navbarTopLinks li:hover {
+.cartLink:hover {
   cursor: pointer;
   transition: ease-in-out 0.2s;
   color: #ff9900;
@@ -184,7 +190,7 @@ li {
     flex-grow: 1;
     background-color: #232f3e;
   }
-  
+
   .navbarSearchSmallScreen {
     font-family: emberRegular;
     flex-grow: 1;
@@ -199,5 +205,4 @@ li {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
-  
 }

@@ -9,6 +9,10 @@ import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
 import SearchResults from "./pages/SearchResults";
 import ScrollToTop from "./components/ScrollToTop";
+import SignIn from "./pages/SignIn";
+import SignUp from "./pages/SignUp";
+import ProtectedRoute from "./utils/ProtectedRoute";
+import Cart from "./pages/Cart";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,6 +41,16 @@ function App() {
           <Route exact path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetails />} />
           <Route path="/search" element={<SearchResults />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route
+            path="/cart"
+            element={
+              <ProtectedRoute>
+                <Cart />
+              </ProtectedRoute>
+            }
+          />
         </Routes>
         <Footer />
       </div>

@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import "../styles/productDetails.css";
 import loaderImg from "../assets/loading-gif.gif";
+import { addToCart } from "../utils/addToCart";
 
 const ProductDetails = () => {
   const { id } = useParams(); // Get product ID from URL
   const [product, setProduct] = useState(null);
 
   const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
-  // const API_BASE_URL = "http://localhost:5000" local work
+  // const API_BASE_URL = "http://localhost:5000" //local work
 
   useEffect(() => {
     fetch(`${API_BASE_URL}/products/${id}`)
@@ -30,6 +31,18 @@ const ProductDetails = () => {
       </p>
     );
   }
+
+  const handleAddToCart = async () => {
+    const token = localStorage.getItem("token");
+
+    if (!token) {
+      alert("Please sign in to add products to your cart!");
+      return;
+    }
+
+    await addToCart(id, 1);
+    alert("Product added to cart!");
+  };
 
   return (
     <div className="productDetailsPage">
@@ -57,10 +70,7 @@ const ProductDetails = () => {
             </div>
             <div className="productPrice">MRP: ₹ {product.price}.00</div>
           </div>
-          <button
-            className="productDetailButton"
-            onClick={() => alert(`${product.name} added to cart!`)}
-          >
+          <button className="productDetailButton" onClick={handleAddToCart}>
             Add to Cart
           </button>
         </div>
