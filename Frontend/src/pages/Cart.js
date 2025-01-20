@@ -38,7 +38,7 @@ const Cart = () => {
     <div className="cartContainer">
       <br></br>
       <Link to="/">&#10094; Back</Link>
-      <h1>Cart</h1>
+      <h1>Shopping Cart</h1>
       {cart.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
