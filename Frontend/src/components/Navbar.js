@@ -8,6 +8,7 @@ import { FiShoppingCart } from "react-icons/fi";
 import { BsSearch } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { FiLogOut } from "react-icons/fi";
 
 function Navbar() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -69,14 +70,14 @@ function Navbar() {
             </li> */}
             <li>
               <Link to="/cart" className="cartLink">
-                <FiShoppingCart title="Cart" />
+                <FiShoppingCart title="Cart" size={20} />
               </Link>
             </li>
             {token ? (
               <li>
-                <button className="checkoutButton" onClick={handleLogout}>
-                  Logout
-                </button>
+                <Link onClick={handleLogout} className="cartLink">
+                  <FiLogOut title="Logout" size={20} />
+                </Link>
               </li>
             ) : (
               <li>
@@ -103,11 +104,16 @@ function Navbar() {
         </div>
         <div className="navbarRight">
           <ul className="navbarTopLinksSmallScreen">
+            <li>
+              <Link to="/cart" className="cartLink">
+                <FiShoppingCart title="Cart" size={20} />
+              </Link>
+            </li>
             {token ? (
               <li>
-                <button className="checkoutButton" onClick={handleLogout}>
-                  Logout
-                </button>
+                <Link onClick={handleLogout} className="cartLink">
+                  <FiLogOut title="Logout" size={20} />
+                </Link>
               </li>
             ) : (
               <li>
@@ -116,11 +122,6 @@ function Navbar() {
                 </Link>
               </li>
             )}
-            <li>
-              <Link to="/cart" className="cartLink">
-                <FiShoppingCart title="Cart" size={20} />
-              </Link>
-            </li>
           </ul>
         </div>
       </div>
