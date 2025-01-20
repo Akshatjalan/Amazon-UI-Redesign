@@ -130,6 +130,11 @@
   gap: 100px;
 }
 
+.accountItems a {
+  text-decoration: none;
+  color: #000;
+}
+
 .itemCard {
   display: flex;
   align-items: center;
@@ -244,6 +249,11 @@
   margin-top: 24px;
   margin-bottom: 12px;
   font-size: 18px;
+}
+
+.productsHeaders a {
+  text-decoration: none;
+  color: #000;
 }
 
 .productsItems {
@@ -581,7 +591,15 @@
   }
 
   .productsHeaders {
-    font-size: 15px;
+    font-size: 16px;
+  }
+
+  .productName {
+    font-size: 16px;
+  }
+
+  .productPrice {
+    font-size: 18px;
   }
 
   .accountContainer {

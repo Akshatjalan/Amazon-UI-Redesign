@@ -10,13 +10,11 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import userPng from "../assets/userAvatar.png";
 import orderPng from "../assets/order_package.svg";
-import mobilePng from "../assets/mobile.png";
-import kitchenPng from "../assets/kitchen.png";
+import bagPng from "../assets/Backpack.png";
 import dogPng from "../assets/dog.png";
 import laptopPng from "../assets/Laptop.png";
-import beautyPng from "../assets/sneakers.png";
+import shoePng from "../assets/sneakers.png";
 import toysPng from "../assets/toys.png";
-import kitchenAppliancePng from "../assets/kitchenAppliances.png";
 import shoes6Png from "../assets/Shoes 6.PNG";
 import Products from "./Products";
 
@@ -25,10 +23,10 @@ function Home() {
     <div>
       <div className="heroContainer">
         <div className="heroContainerLeft">
-          <div className="heroHeading">SHOP MOBILES & ACCESSORIES</div>
+          <div className="heroHeading">SHOP CLOTHING & ACCESSORIES</div>
           <div className="heroDesc">
-            Shop laptops, desktops, monitors, tablets, PC gaming, hard drives
-            and storage, Accessories and more
+            Order Shoes, Tops, Backpacks, Shorts, Leggings, Caps, Jeans,
+            T-Shirts and much more
           </div>
           <Link to="/Products" className="allProductsButton">
             <button className="heroButton">
@@ -104,25 +102,27 @@ function Home() {
               <div> recommendations for you</div>
             </div>
           </div>
+          <Link to="/cart">
+            <div className="itemCard">
+              <img width="96px" src={orderPng} alt="ordersDeals" />
+              <div>
+                <div>Your Cart</div>
+                <div>View your Cart</div>
+              </div>
+            </div>
+          </Link>
           <div className="itemCard">
-            <img width="96px" src={orderPng} alt="ordersDeals" />
+            <img width="100px" src={shoePng} alt="mobileDeals" />
             <div>
-              <div>Your Orders</div>
-              <div>View your Orders</div>
+              <div>Big sale upto 40% off</div>
+              <div>Discounted Products</div>
             </div>
           </div>
           <div className="itemCard">
-            <img width="100px" src={mobilePng} alt="mobileDeals" />
+            <img width="68px" src={bagPng} alt="newDeals" />
             <div>
-              <div>Mobiles and electronics</div>
-              <div> Big sale upto 40% off</div>
-            </div>
-          </div>
-          <div className="itemCard">
-            <img width="68px" src={kitchenPng} alt="homeDeals" />
-            <div>
-              <div> Home and Kitchen</div>
-              <div> Big sale 30% off</div>
+              <div>Recently Viewed</div>
+              <div>Pick up where you left off</div>
             </div>
           </div>
         </div>
@@ -139,11 +139,11 @@ function Home() {
           </div>
           <div className="categoryitemCard">
             <div>Sneakers & Shoes</div>
-            <img width="300px" src={beautyPng} alt="profileDeals" />
+            <img width="300px" src={shoePng} alt="profileDeals" />
           </div>
           <div className="categoryitemCard">
             <div>Bags & Backpacks</div>
-            <img width="400px" src={kitchenAppliancePng} alt="profileDeals" />
+            <img width="300px" src={bagPng} alt="profileDeals" />
           </div>
           <div className="categoryitemCard">
             <div>Hats & Caps</div>
@@ -154,7 +154,6 @@ function Home() {
 
       <div className="productsHeaders">
         <div>Pick up where you left off</div>
-        <div>→</div>
       </div>
       <Products type="Shoes" />
 
@@ -183,7 +182,7 @@ function Home() {
 
       <div className="productsHeaders">
         <div>All Our Products</div>
-        <div>→</div>
+        <Link to="/products">→</Link>
       </div>
       <Products />
     </div>
