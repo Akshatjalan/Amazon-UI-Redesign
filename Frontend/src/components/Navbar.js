@@ -158,8 +158,8 @@ function Navbar() {
               &nbsp;&nbsp;All
             </li>
             <li>Today's Deals</li>
-            <li>Gift Cards</li>
-            <li>Amazon Pay</li>
+            <li>Shoes</li>
+            <li>Backpacks</li>
             <li>Customer Service</li>
             <li>Become a Seller</li>
             <li
