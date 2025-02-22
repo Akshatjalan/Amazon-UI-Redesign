@@ -1,0 +1,30 @@
+.productsitemCard.placeholder {
+  background-color: #f0f0f0;
+}
+
+.placeholder-animation {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: placeholderShimmer 1.5s infinite;
+}
+
+@keyframes placeholderShimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.productImg.placeholder-animation {
+  width: 100%;
+  height: 200px;
+}
+
+.productBrand.placeholder-animation,
+.productName.placeholder-animation,
+.productPrice.placeholder-animation {
+  height: 20px;
+  margin: 10px 0;
+}
