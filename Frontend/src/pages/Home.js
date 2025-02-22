@@ -12,9 +12,9 @@ import userPng from "../assets/userAvatar.png";
 import orderPng from "../assets/order_package.svg";
 import bagPng from "../assets/Backpack.png";
 import dogPng from "../assets/dog.png";
-import laptopPng from "../assets/Laptop.png";
+// import laptopPng from "../assets/Laptop.png";
 import shoePng from "../assets/sneakers.png";
-import toysPng from "../assets/toys.png";
+// import toysPng from "../assets/toys.png";
 import shoes6Png from "../assets/Shoes 6.PNG";
 import Products from "./Products";
 
