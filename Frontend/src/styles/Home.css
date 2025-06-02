@@ -190,24 +190,24 @@
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: cover;
+  background-position: center;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 1);
 }
 
 .categoryitemCard:nth-child(1) {
-  background-image: url("https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/72c29df6-e5ed-4300-9f67-dd6f5a989fac/M+J+AIR+JDN++TOP.png");
+  background-image: url("../assets/category/cat1.jpeg");
 }
 
 .categoryitemCard:nth-child(2) {
-  background-image: url("https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/h_375,c_limit/8bdcbd33-22a0-4635-8bb6-e3b8751e35f2/men-s-shoes-clothing-accessories.jpg");
+  background-image: url("../assets/category/cat2.jpeg");
 }
 
 .categoryitemCard:nth-child(3) {
-  background-image: url("https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6113b187-670a-4000-a091-fe153fa8a3af/NK+UTILITY+POWER+BKPK+-+2.0.png");
+  background-image: url("../assets/category/cat3.jpeg");
 }
 
 .categoryitemCard:nth-child(4) {
-  background-image: url("https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/38bc8aa2-d35d-44a9-9d30-69acafabd97a/U+J+CLUB+CAP+US+CB+MANILA.png");
+  background-image: url("../assets/category/cat4.jpeg");
 }
 
 /* BANNERS SECTION */
