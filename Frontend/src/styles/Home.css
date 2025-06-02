@@ -185,6 +185,7 @@
   width: 50vh;
   /* width: 100%; */
   justify-content: space-around;
+  text-decoration: none;
   background-color: #323335;
   border-radius: 10px;
   overflow: hidden;
@@ -192,6 +193,12 @@
   background-repeat: no-repeat;
   background-position: center;
   text-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.categoryitemCard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .categoryitemCard:nth-child(1) {

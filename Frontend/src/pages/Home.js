@@ -28,7 +28,7 @@ function Home() {
             Order Shoes, Tops, Backpacks, Shorts, Leggings, Caps, Jeans,
             T-Shirts and much more
           </div>
-          <Link to="/Products" className="allProductsButton">
+          <Link to="/category-products?type=All" className="allProductsButton">
             <button className="heroButton">
               <div>Explore all Products</div>
               <span>➜</span>
@@ -132,19 +132,19 @@ function Home() {
         <div>Shop by categories →</div>
       </div>
       <div className="categoryContainer">
-        <div className="categoryItems">
-          <div className="categoryitemCard">
-            <div>All Clothing</div>
-          </div>
-          <div className="categoryitemCard">
+      <div className="categoryItems">
+          <Link to="/category-products?type=Tshirt" className="categoryitemCard">
+            <div>Tops & Shirts</div>
+          </Link>
+          <Link to="/category-products?type=Shoes" className="categoryitemCard">
             <div>Sneakers & Shoes</div>
-          </div>
-          <div className="categoryitemCard">
+          </Link>
+          <Link to="/category-products?type=Bags" className="categoryitemCard">
             <div>Bags & Backpacks</div>
-          </div>
-          <div className="categoryitemCard">
+          </Link>
+          <Link to="/category-products?type=Caps" className="categoryitemCard">
             <div>Hats & Caps</div>
-          </div>
+          </Link>
         </div>
       </div>
 
@@ -178,7 +178,7 @@ function Home() {
 
       <div className="productsHeaders">
         <div>All Our Products</div>
-        <Link to="/products">→</Link>
+        <Link to="/category-products?type=All">→</Link>
       </div>
       <Products />
     </div>

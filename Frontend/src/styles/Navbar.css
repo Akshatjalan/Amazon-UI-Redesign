@@ -110,9 +110,22 @@ li {
   gap: 40px;
   list-style: none;
   font-weight: 500;
+  text-decoration: none;
 }
 
+.navbarBottomLinks li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
 .navbarBottomLinks li:hover {
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+  color: #ff9900;
+  font-weight: 500;
+}
+.navbarBottomLinks li a:hover {
   cursor: pointer;
   transition: ease-in-out 0.4s;
   color: #ff9900;
@@ -124,6 +137,7 @@ li {
     overflow-x: scroll;
     overflow-y: hidden;
   }
+
   .navbarBottom {
     overflow: scroll;
     overflow-y: hidden;
@@ -161,7 +175,7 @@ li {
     list-style: none;
   }
 
-  .navbarTopLinksSmallScreen > li > img {
+  .navbarTopLinksSmallScreen>li>img {
     width: 34px;
   }
 

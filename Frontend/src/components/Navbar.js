@@ -33,7 +33,9 @@ function Navbar() {
     <div>
       <div className="navbar">
         <div className="navbarLeft">
-          <img className="navbarLogo" src={logo} alt="Amazon" />
+          <Link to="/">
+            <img className="navbarLogo" src={logo} alt="Amazon" />
+          </Link>
           <div className="navbarLocation">
             <MdOutlineLocationOn color="#ff9900" />
             India
@@ -100,7 +102,9 @@ function Navbar() {
           <img width="30px" src={userPng} alt="Amazon" />
         </div>
         <div className="navbarLogoSmallScreen">
+          <Link to="/">
           <img src={logo} alt="Amazon" />
+          </Link>
         </div>
         <div className="navbarRight">
           <ul className="navbarTopLinksSmallScreen">
@@ -154,13 +158,20 @@ function Navbar() {
         <div>
           <ul className="navbarBottomLinks">
             <li>
-              <GiHamburgerMenu />
-              &nbsp;&nbsp;All
+              <Link to="/category-products?type=All">
+                <GiHamburgerMenu />
+                &nbsp;&nbsp;All
+              </Link>
             </li>
-            <li>Today's Deals</li>
-            <li>Shoes</li>
-            <li>Backpacks</li>
-            <li>Customer Service</li>
+            <li>
+              <Link to="/category-products?type=Shoes">Shoes</Link>
+            </li>
+            <li>
+              <Link to="/category-products?type=Bags">Backpacks</Link>
+            </li>
+            <li>
+              <Link to="/cart">Cart Items</Link>
+            </li>
             <li>Become a Seller</li>
             <li
               style={{
