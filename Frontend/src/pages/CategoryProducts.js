@@ -12,8 +12,8 @@ function CategoryProducts() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  // const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
-  const API_BASE_URL = "http://localhost:5000"; //local work
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  // const API_BASE_URL = "http://localhost:5000"; //local work
 
   useEffect(() => {
     const fetchProducts = async () => {
