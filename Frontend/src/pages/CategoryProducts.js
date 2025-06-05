@@ -3,6 +3,7 @@ import { useLocation, Link } from "react-router-dom";
 import axios from "axios";
 import "../styles/Home.css";
 import "../styles/CategoryProducts.css";
+import loaderImg from "../assets/loading-gif.gif";
 
 function CategoryProducts() {
   const location = useLocation();
@@ -52,7 +53,17 @@ function CategoryProducts() {
       </h1>
       <div className="categoryProductsGrid">
         {loading ? (
-          <p className="categoryProductsLoading">Loading...</p>
+          // <p className="categoryProductsLoading">Loading...</p>
+          <p
+            style={{
+              height: "55vh",
+              fontSize: "40px",
+              textAlign: "center",
+              marginTop: "100px",
+            }}
+          >
+            <img src={loaderImg} width="100px" alt="Loading..." />
+          </p>
         ) : type === "All" ? (
           products.map((group) => (
             <div key={group.type} className="categoryProductGroup">
