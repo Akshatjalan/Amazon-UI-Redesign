@@ -43,52 +43,58 @@ function Home() {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
-            <div className="swiperCard">
-              <div className="cardDetails">
-                <div className="cardCompany">Apple</div>
-                <div className="cardHeading">Watch Ultra 2 Smartwatch</div>
-                <div className="cardPrice">₹ 89,900.00</div>
-              </div>
-              <img
-                className="heroImg"
-                src={watchPng}
-                height="
+            <Link to="/category-products?type=All">
+              <div className="swiperCard">
+                <div className="cardDetails">
+                  <div className="cardCompany">Apple</div>
+                  <div className="cardHeading">Watch Ultra 2 Smartwatch</div>
+                  <div className="cardPrice">₹ 89,900.00</div>
+                </div>
+                <img
+                  className="heroImg"
+                  src={watchPng}
+                  height="
             380px"
-                alt="headphone"
-              />
-            </div>
+                  alt="headphone"
+                />
+              </div>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="swiperCard">
-              <div className="cardDetails">
-                <div className="cardCompany">Nike</div>
-                <div className="cardHeading">Nike Men's Air Max pulse</div>
-                <div className="cardPrice">₹ 12,499.00</div>
-              </div>
-              <img
-                className="heroImg"
-                src={shoes6Png}
-                height="
+            <Link to="/category-products?type=Shoes">
+              <div className="swiperCard">
+                <div className="cardDetails">
+                  <div className="cardCompany">Nike</div>
+                  <div className="cardHeading">Nike Men's Air Max pulse</div>
+                  <div className="cardPrice">₹ 12,499.00</div>
+                </div>
+                <img
+                  className="heroImg"
+                  src={shoes6Png}
+                  height="
             440px"
-                alt="headphone"
-              />
-            </div>
+                  alt="headphone"
+                />
+              </div>
+            </Link>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="swiperCard">
-              <div className="cardDetails">
-                <div className="cardCompany">Apple</div>
-                <div className="cardHeading">iPhone 15 Pro 128 GB</div>
-                <div className="cardPrice">₹ 1,30,990.00</div>
-              </div>
-              <img
-                className="heroImg"
-                src={iphonePng}
-                height="
+            <Link to="/category-products?type=All">
+              <div className="swiperCard">
+                <div className="cardDetails">
+                  <div className="cardCompany">Apple</div>
+                  <div className="cardHeading">iPhone 15 Pro 128 GB</div>
+                  <div className="cardPrice">₹ 1,30,990.00</div>
+                </div>
+                <img
+                  className="heroImg"
+                  src={iphonePng}
+                  height="
             380px"
-                alt="headphone"
-              />
-            </div>
+                  alt="headphone"
+                />
+              </div>
+            </Link>
           </SwiperSlide>
         </Swiper>
       </div>
@@ -132,8 +138,11 @@ function Home() {
         <div>Shop by categories →</div>
       </div>
       <div className="categoryContainer">
-      <div className="categoryItems">
-          <Link to="/category-products?type=Tshirt" className="categoryitemCard">
+        <div className="categoryItems">
+          <Link
+            to="/category-products?type=Tshirt"
+            className="categoryitemCard"
+          >
             <div>Tops & Shirts</div>
           </Link>
           <Link to="/category-products?type=Shoes" className="categoryitemCard">

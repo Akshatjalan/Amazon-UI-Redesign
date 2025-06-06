@@ -71,7 +71,7 @@
 }
 
 .categoryProductBrand {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: #474747;
 }
@@ -79,7 +79,7 @@
 .categoryProductName {
     font-size: 20px;
     font-weight: 500;
-    height: 70px;
+    height: 50px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -145,11 +145,11 @@
 @media (max-width: 1250px) {
 
     .categoryProductName {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .categoryProductPrice {
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 
@@ -160,10 +160,10 @@
     }
 
     .categoryProductName {
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .categoryProductPrice {
-        font-size: 12px;
+        font-size: 20px;
     }
 }
