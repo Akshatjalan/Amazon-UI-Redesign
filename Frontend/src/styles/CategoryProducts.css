@@ -79,7 +79,7 @@
 .categoryProductName {
     font-size: 20px;
     font-weight: 500;
-    height: 50px;
+    height: 60px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -145,7 +145,7 @@
 @media (max-width: 1250px) {
 
     .categoryProductName {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .categoryProductPrice {
@@ -160,7 +160,7 @@
     }
 
     .categoryProductName {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .categoryProductPrice {
